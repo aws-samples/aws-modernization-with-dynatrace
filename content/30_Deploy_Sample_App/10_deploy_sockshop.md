@@ -4,49 +4,40 @@ chapter = false
 weight = 10
 +++
 
-
-*** run the pre-req tools script to get tools like jmeter **
-
 ## Script overview
 
-First download scripts and manifests required for this class from the github repo:
+Change directory to `dynatrace-k8s`. You can take a look at the deployment script that does the following tasks:
 
-```sh
-$ git clone https://github.com/steve-caron-dynatrace/dynatrace-k8s.git
-```
+* Create a dev namespace
+* Create a production namespace
+* Deploy the backend services (databases and message queuing)
+* Deploy the application services
+* Expose frontend and carts services to public internet
+* Launch continuous load testing on the dev carts service
 
-Change directory to `dynatrace-k8s`. You can take a look at the deployment script:
 ```sh
 $ cd dynatrace-k8s
-$ cat deploy-sockshop.sh
+$ more deploy-sockshop.sh
 ```
-
-The script does the following tasks:
-- Create a dev namespace
-- Create a production namespace
-- Deploy the backend services (databases and message queuing)
-- Deploy the application services
-- Expose frontend and carts services to public internet
-- Launch continuous load testing on the dev carts service
 
 ## Deploy Sock Shop
 
-Execute the deployment script:
+Now just execute the deployment script:
 
 ```sh
 $ ./deploy-sockshop.sh
 ```
+
 ## Validate
 
-Check the command output and validate the pods deployed in production and in dev.
-
-Notice the pods status and ready state. They should all be `Running` and `Ready`. 
-
-You can always get the list of Sock Shop pods by running this command: 
+Get the list of Sock Shop pods by running this command: 
 
 ```sh
-$ kubectl get po --all-namespaces -l product=sockshop
+$ kubectl get pods --all-namespaces -l product=sockshop
 ```
+
+Notice the pods status and ready state. They should all be `Running` and `Ready`. Just rerun the command they are still starting up.
+
 ![validation](/images/validate.png)
 
 ## Access the Sock Shop web app
@@ -93,6 +84,8 @@ You can manually register a new account or log in with one that was created duri
 
 `password : 1234`
 
-<b><u>NOTE</u></b>: The checkout service in the application is not currently implemented. You can add items to the shopping cart but you will not be able to checkout.
+{{% notice warning %}}
+The checkout service in the application is not currently implemented. You can add items to the shopping cart but you will not be able to checkout.
+{{% /notice %}}
 
 {{% children showhidden="false" %}}

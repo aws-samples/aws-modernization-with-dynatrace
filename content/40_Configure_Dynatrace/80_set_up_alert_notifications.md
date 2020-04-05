@@ -1,7 +1,7 @@
 +++
 title = "Setup alert notifications"
 chapter = false
-weight = 10
+weight = 80
 +++
 
 ** IDEA  alerting ---> Send problem --> to Chime or SMS based on tags --> use the problem ID to link back drill to root cause

@@ -1,7 +1,7 @@
 +++
 title = "Deploy Sock Shop"
 chapter = true
-weight = 20
+weight = 30
 +++
 
 ### Shop Sock

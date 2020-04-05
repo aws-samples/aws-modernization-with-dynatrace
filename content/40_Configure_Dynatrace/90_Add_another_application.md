@@ -1,7 +1,7 @@
 +++
 title = "Add another app"
 chapter = true
-weight = 30
+weight = 90
 +++
 
 ## Deploy a new application
