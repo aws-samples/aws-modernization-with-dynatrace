@@ -4,37 +4,32 @@ chapter: true
 weight: 1
 ---
 
-# Main Page
+<div style="text-align: center">
+<h2>AWS Modernization with Dynatrace</h2>
 
-Welome content for Dynatrace AWS EKS Monitoring
+This workshop shows how Dynatrace helps DevOps and AppDev gain end-to-end visibility and immediate insight to identify root cases to problems when managing EKS.
+ 
+</div>
 
-## TO FINALIZE --- Workshop Use cases
+![workshop](/images/workshop.png)
 
-Structure the workshop around the problems DevOps typically faces when managing EKS.
+You should come away from this workshop understanding:
 
-example: Operational Problem we help solve....e.g.
-    Something blew up (spike in load or error)
-    Show Diagnose an issue in the cluster
-    What the specific EKS problem....e.g. ran out of IP and can't autoscale can't handle load.  show how we visualize crash-loop
-    How we layer DT on top of EKS
+* How to monitor and audit the deployed application using Dynatrace OneAgent and AWS CloudWatch monitoring
+* How to create tagging and labeling rules within Dyntrace that give structure for dashboards and alerting rules
+* How to configure alerting rules
+* How to setup role based security
 
-example: AppDev Problems with deployment and Failures 
-    New promotional campaign release.  build has defects that cause errors.  Look at alerts & diagnostics
-    Pre-Prod "slow down".  detect with load
-    pod starts with no resource limits. Causes failures in the app
-    IDEA - new feature to view k8 events (nodes with cpu pressure. part of davis root cause analysis)
+## Who should take this workshop:
 
-Ideas for lab flow....
+* Anyone who has interest in containers 
+* Application teams
+* Architects Developers
+* Technical leads Operations Engineers
+* Infrastructure Teams
 
-1. Gain basic observality to nodes, pods, and ns
-    - install agent & db
-    - install SS app
-    - review OOB tags based on k8 lables
-    - k8 events w/ dashboard
-1. Add custom structure for sample app --> to enable more filtering for views, dashboard & alerts
-    - setup process & service naming
-    - MZ setup for  
-1. Add another app and segment 
-    - resusable dashboard with filtering by MZ
-1. Rule based security
-1. Alerting rules
+## Prerequistes
+
+* Basic understanding of Kubernetes concepts and architecture
+* Basic understanding of infrastructure and application monititoring
+* Familiarity with basic unix commands
