@@ -30,6 +30,9 @@ kubectl get pods -n dynatrace
 Create the secret (named `oneagent`) holding the API and PaaS tokens used to authenticate to to the Dynatrace cluster.
 
 ```sh
+cd ~/dynatrace-k8s
+export DT_API_TOKEN=$(grep "DT_API_TOKEN=" configs.txt | sed 's~DT_API_TOKEN=[ \t]*~~')
+export DT_PAAS_TOKEN=$(grep "DT_PAAS_TOKEN=" configs.txt | sed 's~DT_PAAS_TOKEN=[ \t]*~~')
 kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=$DT_API_TOKEN" --from-literal="paasToken=$DT_PAAS_TOKEN"
 ```
 
