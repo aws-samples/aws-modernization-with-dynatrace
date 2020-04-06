@@ -41,6 +41,33 @@ as an IAM user with administrator access to the AWS account:
 
 Now logout and login as as the new **workshop** user.
 
+### Create keypair
+
+This workshop will provision several EC2 VMs, so we will need to make a [key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) that the CloudFormation script expects. 
+
+1. Within the AWS web console, navigate to **EC2** services and click on the **key pair** left side menu.
+
+    ![keypair-menu](/images/keypair-menu.png)
+
+1. Click on the **create key pair** button and fill in these values
+
+    * name = eksworkshop
+    * fileformat = pem
+
+    ![keypair-menu](/images/create-keypair.png)
+
+{{% notice warning %}}
+The name must be **eksworkshop** or the CloudFormation stack creation will fail.
+{{% /notice %}}
+
+1. Click on the **create key pair**, and a **PEM** file will be downloaded and you will return to the keypair page. 
+
+    ![keypair](/images/keypair.png)
+
+{{% notice info %}}
+We will not need the PEM file for the workshop, but we recommend you save this file to a safe place especially if this is your AWS account.
+{{% /notice %}}
+
 ### Provision the workshop environment
 
 This workshop creates an AWS account and a Cloud9 environment using a CloudFormation script.
