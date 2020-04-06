@@ -10,7 +10,7 @@ To complete the workshop, you first need a Dynatrace tenant to monitor AWS resou
 
 **Option 1: I need a Dynatrace tenant**
 
-Navigate to [Sign up for a 15-day trial](/20_dynatrace_prerequisites/20_dynatrace_trial.html)
+Navigate to [Sign up for a 15-day trial](/20_dynatrace_prerequisites/10_dynatrace_trial.html)
 
 **Option 2: I already have a Dynatrace tenant**
 
@@ -18,4 +18,4 @@ Navigate to [Sign up for a 15-day trial](/20_dynatrace_prerequisites/20_dynatrac
 You will need admin rights to configure configuration rules and install agents. Ensure you have authority within your organization to do this in your tenant. 
 {{% /notice %}}
 
-If you are running the workshop on your own Dynatrace tenant, then navigate to: [Create Dyntrace Tokens](/20_dynatrace_prerequisites/30_create_dynatrace_tokens.html) step.
+If you are running the workshop on your own Dynatrace tenant, then navigate to: [Attach the IAM role to your workspace](/20_dynatrace_prerequisites/20_ec2instance.md.html) step.
