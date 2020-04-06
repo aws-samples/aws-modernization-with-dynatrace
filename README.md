@@ -1,24 +1,22 @@
-# Setup
+# Overview
 
-We want this workshop to be self service as to show up here: https://awsworkshop.io/
-Can can also be used for instructor led course
+This repo contains the content for a workshop that shows how Dynatrace helps DevOps and AppDev gain end-to-end visibility and immediate insight to identify root cases to problems when managing EKS.
+
+This workshop is available at https://dynatrace.awsworkshop.io/
 
 # To view this content locally
 
-* install hugo
+* install [hugo](https://gohugo.io/)
     * macOS: `brew install hugo`
     * Windows: `choco install hugo -confirm`
 * clone this repo
-* execute: 
+* execute in the root folder:
   * `git submodule init`
   * `git submodule update`
 * run ```hugo server```
+* open website
 
-# TODO list
+# Reference
 
-1. [Trello tasks](https://trello.com/b/VyLDqCCl/aws-eks-workshop)
-
-# Reference: 
-
-https://aws-samples.github.io/aws-modernization-workshop-sample/
-https://github.com/aws-samples/aws-modernization-workshop-sample
+* [AWS workshop content documentation guide](https://aws-samples.github.io/aws-modernization-workshop-sample/)
+* [AWS sample workshop](https://github.com/aws-samples/aws-modernization-workshop-sample)
