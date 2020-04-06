@@ -9,7 +9,7 @@ The next set of steps assume that your Dynatrace tenant us fully provisioned and
 {{% /notice %}}
 
 {{% notice warning %}}
-The next set of steps assume that your AWS resources are fully provisioned.  If you were using your own AWS account, ensure that the CloudFormation is in a fully complete status. You can monitor in the AWS console **CloudFormation** service page. When it is done you should see **CREATE_COMPLETE** for all stack and nested stacks as shown below.
+The next set of steps assume that your AWS resources are fully provisioned.  If you were using your own AWS account, ensure that the CloudFormation is in a fully complete status. You can monitor in the AWS console **CloudFormation** service page. When it is done you should see **CREATE_COMPLETE** for all stack and nested stacks.
 {{% /notice %}}
 
 {{% notice info %}}

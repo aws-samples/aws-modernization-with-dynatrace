@@ -22,7 +22,7 @@ We have provided some simple UNIX shell scripts for this workshop that will auto
     * Upgrade the [AWS CLI](https://aws.amazon.com/cli/) to version 2
 
     ```
-    cd dynatrace-k8s
+    cd ~/dynatrace-k8s
     ./install-workshop-tools.sh
     ```
 
