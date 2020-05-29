@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Dynatrace Modernization Workshop</title>
+    <link>/20_introduction.html</link>
+    <description>Recent content in Introduction on Dynatrace Modernization Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/20_introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why Dynatrace</title>
+      <link>/20_introduction/10_why_dynatrace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/20_introduction/10_why_dynatrace.html</guid>
+      <description>Meet Pravin, easyTravels CTO, who will share the teams approach migrating to AWS and why they choose Dynatrace as strategic partner for this journey.
+Enterprise Cloud is underpinning our digital transformation At easyTravel, enterprise cloud brings a great deal of change for it is all:
+ completely software driven (including the infrastructure). dynamic and built on a complex ecosystem of micro services and containers running at massive scale spanning across multiple cloud environments and data centers constantly changing at a pace faster than ever before.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Adoption Framework</title>
+      <link>/20_introduction/20_cloud_adoption_framework.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/20_introduction/20_cloud_adoption_framework.html</guid>
+      <description>We at easyTravel have embraced AWS proven guidance found within the Microsoft Cloud Adoption Framework that is designed to help create and implement the business and technology strategies necessary to succeed in the cloud.
+The Cloud Adoption Framework provides us with the best practices, documentation, and tools that cloud architects, IT professionals, and business decision makers need to successfully achieve short-term and long-term objectives.
+By leveraging Dynatrace we see the value in each phase:</description>
+    </item>
+    
+  </channel>
+</rss>

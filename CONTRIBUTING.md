@@ -17,7 +17,20 @@ reported the issue. Please try to include as much information as you can. Detail
 * Any modifications you've made relevant to the bug
 * Anything unusual about your environment or deployment
 
+# To view this content locally
+
+* install [hugo](https://gohugo.io/)
+    * macOS: `brew install hugo`
+    * Windows: `choco install hugo -confirm`
+* clone this repo
+* execute in the root folder:
+  * `git submodule init`
+  * `git submodule update`
+* run ```hugo server```
+* open website
+
 ## Contributing via Pull Requests
+
 Contributions via pull requests are much appreciated. Before sending us a pull request, please ensure that:
 
 1. You are working against the latest source on the *master* branch.
@@ -38,9 +51,16 @@ GitHub provides additional document on [forking a repository](https://help.githu
 Keep your fork up to date with these commands
 
 ```
-git fetch upstream
+# add upstream repo
 git remote add upstream https://github.com/aws-samples/aws-modernization-with-dynatrace.git
+
+# review 
+git remove -v
+
+# update fork and push back up
+git fetch upstream
 git merge upstream/master
+git push
 ```
 
 ## Finding contributions to work on

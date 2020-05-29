@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Dynatrace AWS EKS Monitoring"
+title = "Dynatrace Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
@@ -15,9 +15,9 @@ enableEmoji = true
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "James Bland"
+  author = "Dynatrace Technical Alliances Team"
   # Description of the site, will be used in meta information
-  description = "Dynatrace AWS EKS Monitoring Description"
+  description = "Accelerate your cloud migration and modernize your workloads with AWS and Dynatrace"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -45,26 +45,24 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
-url = "https://awsworkshop.io"
+name = "<i class='fas fa-graduation-cap'></i> Dynatrace AWS Support"
+url = "https://www.dynatrace.com/technologies/aws-monitoring/"
 weight = 10
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> AWS Builders Library"
-url = "https://aws.amazon.com/builders-library/"
-weight = 11
 
 [[menu.shortcuts]]
 name = "<i class='far fa-lightbulb'></i> Modernizating with AWS"
 url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
 weight = 20
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-users'></i> Partner Solutions Finder"
-url = "https://aws.amazon.com/partners/find/"
+[[menu.shortcuts]] 
+name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
+url = "https://awsworkshop.io"
 weight = 30
 
-[markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackFriday]
-    hrefTargetBlank = true
+[[menu.shortcuts]]
+name = "<i class='far fa-lightbulb'></i> Workshop feedback"
+url = "https://github.com/aws-samples/aws-modernization-with-dynatrace"
+weight = 40
+
+[blackfriday]
+hrefTargetBlank = true

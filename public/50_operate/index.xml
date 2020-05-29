@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operate on Dynatrace Modernization Workshop</title>
+    <link>/50_operate.html</link>
+    <description>Recent content in Operate on Dynatrace Modernization Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/50_operate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simplify Operations</title>
+      <link>/50_operate/10_simplify_operations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/50_operate/10_simplify_operations.html</guid>
+      <description>Migrating to the cloud means there are more moving pieces to monitor and manage. As we have learned, Dynatrace fully automates monitoring through OneAgent and the native integration with AWS.
+Post-migration, Dynatrace’s deterministic AI engine, DAVIS, helps you run your applications smoothly, pinpointing production issues with root-cause information right at your fingertips. DAVIS leverages Smartscape dependency data, as well as the high-fidelity monitoring data from OneAgent. The AI can be fed with external events such as deployment or configuration change events from your CI/CD or deployment automation tools.</description>
+    </item>
+    
+    <item>
+      <title>How Davis Works</title>
+      <link>/50_operate/20_how_davis_works.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/50_operate/20_how_davis_works.html</guid>
+      <description>Davis is Dynatrace’s AI engine that is purpose-built for today’s web-scale enterprise clouds. Davis analyzes complex dependencies, creates application topology dynamically and helps you in anomaly detection.
+1. Intelligent anomaly detection
+Problems in Dynatrace represent anomalies, i.e. deviations from a normal behavior or state. Such anomalies can be, for example, a slow service or a slow user login to an application. Whenever a problem is detected, Dynatrace raises a specific problem event indicating such an anomaly.</description>
+    </item>
+    
+    <item>
+      <title>Summary</title>
+      <link>/50_operate/30_summary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/50_operate/30_summary.html</guid>
+      <description>What makes Dynatrace truly special and unique is Davis. Davis is the deterministic AI engine that automatically detects problems for you and pinpoints the root cause and explains the business impact without needing any manual configurations.
+AI-supported baselining on the migrated services allows for validating the success of the migration project from a performance, resource and cost perspective. Live performance insights into the full stack allows us to:
+ Dynamically scale and implement auto-mitigation strategies!</description>
+    </item>
+    
+  </channel>
+</rss>

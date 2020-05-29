@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.4" />
+    <meta name="description" content="Accelerate your cloud migration and modernize your workloads with AWS and Dynatrace">
+<meta name="author" content="Dynatrace Technical Alliances Team">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Workshop Setup :: Dynatrace Modernization Workshop</title>
+
+    
+    <link href="/css/nucleus.css?1590622922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1590622922" rel="stylesheet">
+    <link href="/css/hybrid.css?1590622922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1590622922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1590622922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1590622922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1590622922" rel="stylesheet">
+    <link href="/css/theme.css?1590622922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1590622922" rel="stylesheet">
+    
+      <link href="/css/theme-mine.css?1590622922" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1590622922"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/10_prerequisites/40_workshop_setup.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="60%" style="padding:20px 0px;"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1590622922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1590622922"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1590622922"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10_prerequisites.html" title="Prerequisites" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/10_prerequisites.html">
+          Prerequisites
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/10_dynatrace.html" title="Dynatrace" class="dd-item ">
+        <a href="/10_prerequisites/10_dynatrace.html">
+        Dynatrace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/20_dynatrace_trial.html" title="Sign up for Dynatrace Trial" class="dd-item ">
+        <a href="/10_prerequisites/20_dynatrace_trial.html">
+        Sign up for Dynatrace Trial
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/30_azure.html" title="AWS" class="dd-item ">
+        <a href="/10_prerequisites/30_azure.html">
+        AWS
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/40_workshop_setup.html" title="Workshop Setup" class="dd-item active">
+        <a href="/10_prerequisites/40_workshop_setup.html">
+        Workshop Setup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/20_introduction.html" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/20_introduction.html">
+          Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_introduction/10_why_dynatrace.html" title="Why Dynatrace" class="dd-item ">
+        <a href="/20_introduction/10_why_dynatrace.html">
+        Why Dynatrace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_introduction/20_cloud_adoption_framework.html" title="Cloud Adoption Framework" class="dd-item ">
+        <a href="/20_introduction/20_cloud_adoption_framework.html">
+        Cloud Adoption Framework
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/30_assessment.html" title="Assessment and planning" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/30_assessment.html">
+          Assessment and planning
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/10_dynatrace_oneagent.html" title="Dynatrace OneAgent" class="dd-item ">
+        <a href="/30_assessment/10_dynatrace_oneagent.html">
+        Dynatrace OneAgent
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/20_review_eztravel.html" title="Review easyTravel" class="dd-item ">
+        <a href="/30_assessment/20_review_eztravel.html">
+        Review easyTravel
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/30_review_eztravel-host.html" title="Host and Smartscape" class="dd-item ">
+        <a href="/30_assessment/30_review_eztravel-host.html">
+        Host and Smartscape
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/40_review_eztravel-process.html" title="Processes and Services" class="dd-item ">
+        <a href="/30_assessment/40_review_eztravel-process.html">
+        Processes and Services
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/50_review_eztravel_service_flow.html" title="Service Flow" class="dd-item ">
+        <a href="/30_assessment/50_review_eztravel_service_flow.html">
+        Service Flow
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/60_review_eztravel-transactions_services.html" title="Transactions and Services" class="dd-item ">
+        <a href="/30_assessment/60_review_eztravel-transactions_services.html">
+        Transactions and Services
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/70_review_eztravel-databases.html" title="Databases" class="dd-item ">
+        <a href="/30_assessment/70_review_eztravel-databases.html">
+        Databases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/90_review_eztravel-technologies.html" title="Technology View" class="dd-item ">
+        <a href="/30_assessment/90_review_eztravel-technologies.html">
+        Technology View
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/100_azure_monitor.html" title="AWS Monitor" class="dd-item ">
+        <a href="/30_assessment/100_azure_monitor.html">
+        AWS Monitor
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/110_summary.html" title="Summary" class="dd-item ">
+        <a href="/30_assessment/110_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_assessment/120_enable_problem.html" title="Enable a Problem" class="dd-item ">
+        <a href="/30_assessment/120_enable_problem.html">
+        Enable a Problem
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/40_adopt.html" title="Adopt" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/40_adopt.html">
+          Adopt
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/40_adopt/10_identify.html" title="Identify" class="dd-item ">
+        <a href="/40_adopt/10_identify.html">
+        Identify
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/40_adopt/20_scale.html" title="Scale" class="dd-item ">
+        <a href="/40_adopt/20_scale.html">
+        Scale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/40_adopt/30_summary.html" title="Summary" class="dd-item ">
+        <a href="/40_adopt/30_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/50_operate.html" title="Operate" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/50_operate.html">
+          Operate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_operate/10_simplify_operations.html" title="Simplify Operations" class="dd-item ">
+        <a href="/50_operate/10_simplify_operations.html">
+        Simplify Operations
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_operate/20_how_davis_works.html" title="How Davis Works" class="dd-item ">
+        <a href="/50_operate/20_how_davis_works.html">
+        How Davis Works
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_operate/30_summary.html" title="Summary" class="dd-item ">
+        <a href="/50_operate/30_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/100_wrapup.html" title="Wrapup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/100_wrapup.html">
+          Wrapup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/100_wrapup/10_cleanup.html" title="AWS Cleanup" class="dd-item ">
+        <a href="/100_wrapup/10_cleanup.html">
+        AWS Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/100_wrapup/20_dynatrace.html" title="Dynatrace" class="dd-item ">
+        <a href="/100_wrapup/20_dynatrace.html">
+        Dynatrace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/120_more.html" title="More Exercises" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/120_more.html">
+          More Exercises
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/120_more/10_agent_install.html" title="OneAgent Manual Install" class="dd-item ">
+        <a href="/120_more/10_agent_install.html">
+        OneAgent Manual Install
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://awsworkshop.io"><i class='fas fa-graduation-cap'></i> Modernization Workshops</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.dynatrace.com/technologies/aws-monitoring/"><i class='fas fa-graduation-cap'></i> Dynatrace</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/"><i class='fas fa-tools'></i> Dynatrace AWS Support</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://aws.amazon.com/blogs/modernizing-with-aws/"><i class='far fa-lightbulb'></i> Modernizating with AWS</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <h5 class="copyright">&copy; 2020 Dynatrace, LLC. All rights reserved.
+        Last Updated: Wed May 27 19:42:02 EDT 2020
+    </h5>
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Main Page</a> > <a href='/10_prerequisites.html'>Prerequisites</a> > Workshop Setup
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-open-aws-cloud-shell">1. Open AWS Cloud Shell</a></li>
+<li><a href="#2-verify-what-subscription-your-are-on">2. Verify what subscription your are on</a></li>
+<li><a href="#3-clone-the-workshop-scripts">3. Clone the workshop scripts</a></li>
+<li><a href="#4-capture-environment-and-token-info">4. Capture environment and token info</a>
+<ul>
+<li><a href="#input-1-of-6-your-last-name">Input 1 of 6: Your last name</a></li>
+<li><a href="#input-2-of-6-dynatrace-base-url">Input 2 of 6: Dynatrace Base URL</a></li>
+<li><a href="#input-3-of-6-dynatrace-environment-id">Input 3 of 6: Dynatrace Environment ID</a></li>
+<li><a href="#input-4-of-6-dynatrace-paas-token">Input 4 of 6: Dynatrace PaaS Token</a></li>
+<li><a href="#input-5-of-6-dynatrace-api-token">Input 5 of 6: Dynatrace API Token</a></li>
+<li><a href="#input-6-of-6-aws-subscription">Input 6 of 6: AWS subscription</a></li>
+</ul></li>
+<li><a href="#verify">Verify</a></li>
+<li><a href="#7-setup-aws-monitor">7. Setup AWS monitor</a>
+<ul>
+<li><a href="#what-exactly-is-this-script-doing">What exactly is this script doing?</a></li>
+<li><a href="#run-the-script">Run the script</a></li>
+</ul></li>
+<li><a href="#6-provision-workshop">6. Provision workshop</a>
+<ul>
+<li><a href="#what-exactly-is-this-script-doing-1">What exactly is this script doing?</a></li>
+<li><a href="#run-the-script-1">Run the script</a></li>
+</ul></li>
+<li><a href="#checklist">Checklist</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Workshop Setup
+            </h1>
+          
+
+        
+
+
+
+
+
+<p><img src="/images/jess.png" alt="image" /></p>
+
+<p>In this section, your will complete the following:</p>
+
+<ul>
+<li>Open AWS Cloud Shell for running various UNIX commands</li>
+<li>Capture environment and token info needed for automation scripts</li>
+<li>Provision easyTravel application</li>
+<li>Verify EasyTravel application is running</li>
+</ul>
+
+<h3 id="1-open-aws-cloud-shell">1. Open AWS Cloud Shell</h3>
+
+<p>1 . Navigate to <a href="https://portal.AWS.com/" target="_blank">https://portal.AWS.com/</a></p>
+
+<p>2 . Click on the Cloud Shell button</p>
+
+<p><img src="/images/AWS-shell-open.png" alt="image" /></p>
+
+<p>If you get this prompt, choose bash</p>
+
+<p><img src="/images/AWS-shell-bash.png" alt="image" /></p>
+
+<p>If you get this prompt, choose <code>AWS Pass - Sponsorship</code> and then click the <code>Create Storage</code> button.</p>
+
+<p><img src="/images/AWS-shell-storage.png" alt="image" /></p>
+
+
+<div class="notices warning" ><p>Creating the storage will take about a minute.</p>
+</div>
+
+
+<p>3 . You should see the bash shell.</p>
+
+<p><img src="/images/AWS-shell-prompt.png" alt="image" /></p>
+
+<p>4 . Make a dedicated AWS shell Browser tab by clicking this new tab icon.</p>
+
+<p><img src="/images/AWS-shell-newtab.png" alt="image" /></p>
+
+<h3 id="2-verify-what-subscription-your-are-on">2. Verify what subscription your are on</h3>
+
+<p>To see which subscription is configured for the AWS CLI, run this command.</p>
+
+<pre><code>az account show
+</code></pre>
+
+<p>Look for the name in the output. This is example when a promo code was used.</p>
+
+<pre><code>{
+  &quot;environmentName&quot;: &quot;AWSCloud&quot;,
+  &quot;homeTenantId&quot;: &quot;xxx-xxx-xxx-xx-xxx&quot;,
+  &quot;id&quot;: &quot;yyy-yyyy-yyy-yyy-yyy&quot;,
+  &quot;isDefault&quot;: true,
+  &quot;managedByTenants&quot;: [],
+  &quot;name&quot;: &quot;AWS Pass - Sponsorship&quot;,   &lt;----- This is the active subscription
+  &quot;state&quot;: &quot;Enabled&quot;,
+  &quot;tenantId&quot;: &quot;zzz-zzz-zzz-zzz-zzz&quot;,
+  &quot;user&quot;: {
+    &quot;name&quot;: &quot;name@company.com&quot;,
+    &quot;type&quot;: &quot;user&quot;
+  }
+}
+</code></pre>
+
+<p>If the subscription is not the one you expect, run this command to see all the subscriptions for your user id. If this is the first time using AWS portal or a trial, then you should only have one subscription.</p>
+
+<pre><code>az account list
+</code></pre>
+
+<p>To change subscriptions, identify the subscription name from the account list output and run this command to set it as your default.</p>
+
+<pre><code># this is example, so the scription name you want in quotes
+az account set --subscription &quot;AWS Pass - Sponsorship&quot;
+</code></pre>
+
+<p>Then rerun the show command to verify</p>
+
+<pre><code>az account show
+</code></pre>
+
+<h3 id="3-clone-the-workshop-scripts">3. Clone the workshop scripts</h3>
+
+<p>First we need to get some scripts that will automate the workshop setup.</p>
+
+<pre><code>git clone https://github.com/dt-demos/modernize-workshop-setup.git
+</code></pre>
+
+<h3 id="4-capture-environment-and-token-info">4. Capture environment and token info</h3>
+
+
+<div class="notices warning" ><p>The next set of steps assume that your Dynatrace tenant is fully provisioned and you are logged in.</p>
+</div>
+
+
+<p>Gather environment and token info To configure and deploy easyTravel and for exercises later in the workshop, we will need the following info from your Dynatrace environment</p>
+
+<ul>
+<li>Base URL</li>
+<li>Environment ID</li>
+<li>API token</li>
+<li>PaaS token</li>
+</ul>
+
+<p>And we will need the following from your AWS subscription:</p>
+
+<ul>
+<li>Subscription ID</li>
+</ul>
+
+<p>For this, have provided a simple UNIX shell script for this workshop that prompts for these values and writes them to a file called <code>creds.json</code>. Later in the workshop steps, there are a few other simple UNIX shell that will automate the step that read this file so that you don’t need to type or copy-paste these values over and over agaan during the workshop.</p>
+
+<p>So start by running this script that will provide prompts. Follow the sections below to get these values and paste them against the prompt. If you mess up, you can re-run the script.</p>
+
+<p>1 . run UNIX shell script</p>
+
+<pre><code>cd ~/modernize-workshop-setup/aws
+./inputAWSWorkshopCredentials.sh
+</code></pre>
+
+<p>2 . Login into Dynatrace</p>
+
+
+<div class="notices info" ><p>You can always login to your tenant using the URL https://[ENVIRONMENT ID].live.dynatrace.com/ or by using the the SaaS login link on the top right of the Dynatrace home page.</p>
+</div>
+
+
+<h4 id="input-1-of-6-your-last-name">Input 1 of 6: Your last name</h4>
+
+<p>In the UNIX terminal, enter your last name at the prompt. This will be added as a prefix for the AWS resource group name.</p>
+
+<h4 id="input-2-of-6-dynatrace-base-url">Input 2 of 6: Dynatrace Base URL</h4>
+
+<p>1 . Copy the Dynatrace base URL from your browser, for example: <strong>https://[ENVIRONMENT ID].live.dynatrace.com</strong></p>
+
+
+<div class="notices warning" ><p>Do not include the trailing backslash at URL.</p>
+</div>
+
+
+<p>2 . Back in the UNIX terminal, paste the value for the <code>Dynatrace Base URL</code> prompt.</p>
+
+<h4 id="input-3-of-6-dynatrace-environment-id">Input 3 of 6: Dynatrace Environment ID</h4>
+
+<p>1 . From the Dynatrace left side menu, select Deploy Dynatrace. Then Click the Setup PaaS integration button</p>
+
+<p><img src="/images/dt-paas-setup.png" alt="image" /></p>
+
+<p>2 . Click the Copy button under the environment ID.</p>
+
+<p><img src="/images/dt-paas-environment.png" alt="image" /></p>
+
+<p>3 . Back in the UNIX terminal, paste the value for the <code>Dynatrace Environment ID</code> prompt</p>
+
+<h4 id="input-4-of-6-dynatrace-paas-token">Input 4 of 6: Dynatrace PaaS Token</h4>
+
+<p>1 . On this same page. click the Generate new token button.</p>
+
+<p><img src="/images/dt-paas-token-generate.png" alt="image" /></p>
+
+<p>2 . click the Generate button, and then enter a name for your token (e.g. workshop)</p>
+
+<p><img src="/images/dt-paas-token-settings.png" alt="image" /></p>
+
+<p>3 . then the Copy button</p>
+
+<p><img src="/images/dt-paas-token-copy.png" alt="image" /></p>
+
+<p>4 . Back in the UNIX terminal, paste the value for the <code>Dynatrace PaaS token</code> prompt</p>
+
+<h4 id="input-5-of-6-dynatrace-api-token">Input 5 of 6: Dynatrace API Token</h4>
+
+<p>1 . From the Dynatrace left side menu, navigate to: Settings -&gt; Integration -&gt; Dynatrace API</p>
+
+<p>2 . Click on the Generate Token button</p>
+
+<p><img src="/images/dt-api-token-create.png" alt="image" /></p>
+
+<p>3 . Enter a name for your token (e.g. workshop)</p>
+
+<p>4 . Leave the default options and click Generate</p>
+
+<p><img src="/images/dt-api-token-settings.png" alt="image" /></p>
+
+<p>5 . Expand the newly created token, copy the token value and paste it to your bastion terminal script prompt : API token</p>
+
+<p><img src="/images/dt-api-token-copy.png" alt="image" /></p>
+
+<p>6 . Back in the UNIX terminal, paste the value for the <code>Dynatrace PaaS token</code> prompt</p>
+
+<h4 id="input-6-of-6-aws-subscription">Input 6 of 6: AWS subscription</h4>
+
+<p>1 . Open a new browser with for AWS portal</p>
+
+<p>2 . Search for subscriptions and open the subscriptions page</p>
+
+<p><img src="/images/AWS-search-subscription.png" alt="image" /></p>
+
+<p>3 . Form the list of subscriptions, copy the Subscription ID of your AWS subscription using the copy button</p>
+
+<p><img src="/images/AWS-copy-subscription.png" alt="image" /></p>
+
+<p>4 . Back in the UNIX terminal, paste the value for the <code>AWS subscription ID</code> prompt</p>
+
+<h3 id="verify">Verify</h3>
+
+<p>Your completed data entry, should look like this.</p>
+
+<pre><code>Please confirm all are correct:
+
+Dynatrace Base URL       : https://MY-ENVIONMENT.live.dynatrace.com
+Dynatrace Environment ID : MY-ENVIONMENT
+Dynatrace PaaS Token     : MY-PAAS-TOKEN
+Dynatrace API Token      : MY-API-TOKEN
+AWS Subscription ID    : xxxx-xxxx-xxxx-xxxx-xxxxxxxx
+Is this correct? (y/n): y
+</code></pre>
+
+<p>After you confirm, the script will show the saved values in the <code>creds.jso</code>n file. You can view again by simply typing cat <code>creds.json</code>. NOTE that the AWS Location and AWS Resource Group are pre-configured.</p>
+
+<p>If you mess up, you can re-run the script again and will prompt you again for each value.</p>
+
+<pre><code>cd ~/modernize-workshop-setup/aws
+/inputAWSWorkshopCredentials.sh
+</code></pre>
+
+<h3 id="7-setup-aws-monitor">7. Setup AWS monitor</h3>
+
+<p>This step will add an AWS Service Principal and the Dynatrace configuration needed for the Dynatrace AWS monitor.</p>
+
+
+<div class="notices warning" ><p>If you are using your own or corporate subscription, you may NOT have the permissions to create a service principal and will get an error if that is the case. You can skip running this script and following the <a href="https://www.dynatrace.com/support/help/technology-support/cloud-platforms/microsoft-AWS/AWS-services/AWS-monitor/" target="_blank">Dynatrace AWS Monitor Setup Documentation</a>.</p>
+</div>
+
+
+<h4 id="what-exactly-is-this-script-doing">What exactly is this script doing?</h4>
+
+<p>1 . AWS resources</p>
+
+<ul>
+<li>Add Service Principal with reader permissions. This is needed for the AWS monitor integration</li>
+</ul>
+
+<p>2 . Dynatrace configuration</p>
+
+<ul>
+<li>Add an AWS monitor configuration using the secrets from new Azue Service Principal</li>
+</ul>
+
+<h4 id="run-the-script">Run the script</h4>
+
+<p>1 . run these commands to start the provisioning process</p>
+
+<pre><code>cd ~/modernize-workshop-setup/aws
+./createAWSMonitorServicePrincipal.sh
+</code></pre>
+
+<p>The script output will look like this:</p>
+
+<pre><code>==========================================
+Adding AWS monitor for Dynatrace
+Starting: Tue May 26 18:03:51 EDT 2020
+==========================================
+Seeing if jahn-AWS-modernize-workshop-sp exists
+Deleting existing jahn-AWS-modernize-workshop-sp
+Removing role assignments
+Adding YOURNAME-AWS-modernize-workshop-sp
+Creating a role assignment under the scope of &quot;/subscriptions/111-222-333-444-555&quot;
+  Retrying role assignment creation: 1/36
+Adding Dynatrace config needed for AWS monitor
+===================================================================================
+Checking if AWS/credentials AWS-modernize-workshop exists
+Deleting AWS/credentials AWS-modernize-workshop (ID = AWS_CREDENTIALS-11111)
+Waiting 10 seconds to ensure AWS-modernize-workshop is deleted
+Adding AWS/credentials AWS-modernize-workshop
+{&quot;id&quot;:&quot;AWS_CREDENTIALS-11111&quot;,&quot;name&quot;:&quot;AWS-modernize-workshop&quot;}
+=============================================
+Adding AWS monitor for Dynatrace COMPLETE
+End: Tue May 26 18:04:17 EDT 2020
+=============================================
+</code></pre>
+
+<h3 id="6-provision-workshop">6. Provision workshop</h3>
+
+<p>This step will provision several AWS resources and the Dynatrace configuration needed for the workshop.</p>
+
+<h4 id="what-exactly-is-this-script-doing-1">What exactly is this script doing?</h4>
+
+<p>1 . AWS resources</p>
+
+<ul>
+<li>Add a Resource Group for all the VMs named: <strong>YOURNAME-AWS-modernize-workshop</strong></li>
+<li>Add VM named: <strong>workshop-ez-1</strong>. At startup, it installs Docker and the EZ travel application. OneAgent is installed using AWS extension</li>
+<li>Add VM named: <strong>workshop-ez-docker-1</strong>. At startup, it installs Docker and the EZ travel application. OneAgent is installed using AWS extension</li>
+<li>Add VM named: <strong>workshop-active-gate-1</strong>. At startup, it installs the Dynatrace ActiveGate process needed for the AWS monitor integration.</li>
+</ul>
+
+<p>2 . Dynatrace configuration</p>
+
+<ul>
+<li>Set global <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/detection-of-frequent-issues/" target="_blank">Frequent Issue Detection</a> settings to Off</li>
+<li>Adjust the <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/how-to-adjust-the-sensitivity-of-problem-detection/" target="_blank">Service Anomaly Detection</a> global settings</li>
+<li>Add a <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/transactions-and-services/configuration/define-custom-services/" target="_blank">custom Java sensor</a> for the CheckDestination backend service</li>
+<li>Add <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/management-zones/" target="_blank">Management Zones</a> for ez-travel and ez-travel-docker</li>
+<li>Add modernize-workshop <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/dashboards-and-charts/" target="_blank">dashboard</a></li>
+<li>Add autoTagging rule for a <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/tags-and-metadata/" target="_blank">tag</a> called workshop-group.</li>
+<li>Add <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/real-user-monitoring/setup-and-configuration/web-applications/initial-configuration/define-your-applications-via-the-my-web-application-placeholder/" target="_blank">application</a> for EasyTravelOrange and EasyTravelOrangeDocker</li>
+</ul>
+
+<h4 id="run-the-script-1">Run the script</h4>
+
+<p>1 . run these commands to start the provisioning process</p>
+
+<pre><code>cd ~/modernize-workshop-setup/aws
+./provisionAWSWorkshop.sh
+</code></pre>
+
+
+<div class="notices warning" ><p>The process to provision each Virtual Machine make take 5-10 minutes, so please be patient</p>
+</div>
+
+
+<p>2 . You can let this script run while we move to the the next section.</p>
+
+<p>The start of the script output will look like this:</p>
+
+<pre><code>==========================================
+Provisioning AWS workshop resources
+==========================================
+
+*** Provisioning 1 hosts of type ez ***
+Using resource group AWS-modernize-workshop
+Provisioning ez (1 of 1): Starting: Thu May 14 22:20:33 EDT 2020
+...
+...
+Eventually when it completes, it will look like this:
+
+...
+...
+=============================================
+Provision AWS workshop resources COMPLETE
+=============================================
+</code></pre>
+
+<h3 id="checklist">Checklist</h3>
+
+<p>In this section, you should have completed the following:</p>
+
+<p>✅ Used the AWS Cloud Shell and ran various UNIX commands</p>
+
+<p>✅ Captured environment and token info needed for automation scripts</p>
+
+<p>✅ Provisioned workshop AWS resources</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/10_prerequisites/30_azure.html" title="AWS"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/20_introduction.html" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1590622922"></script>
+    <script src="/js/perfect-scrollbar.min.js?1590622922"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1590622922"></script>
+    <script src="/js/jquery.sticky.js?1590622922"></script>
+    <script src="/js/featherlight.min.js?1590622922"></script>
+    <script src="/js/highlight.pack.js?1590622922"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1590622922"></script>
+    <script src="/js/learn.js?1590622922"></script>
+    <script src="/js/hugo-learn.js?1590622922"></script>
+
+    <link href="/mermaid/mermaid.css?1590622922" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1590622922"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

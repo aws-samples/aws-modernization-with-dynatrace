@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wrapup on Dynatrace Modernization Workshop</title>
+    <link>/100_wrapup.html</link>
+    <description>Recent content in Wrapup on Dynatrace Modernization Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/100_wrapup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Cleanup</title>
+      <link>/100_wrapup/10_cleanup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/100_wrapup/10_cleanup.html</guid>
+      <description>In order to prevent charges to your subscription we recommend cleaning up the infrastructure that was created. If you plan to keep things running so you can examine the workshop a bit more please remember to do the cleanup when you are done. It is very easy to leave things running in an AWS subscription, forget about it, and then accrue charges.
+ Delete Service Principal The Dynatrace AWS monitor setup also made a Service Principal that is used to pull data.</description>
+    </item>
+    
+    <item>
+      <title>Dynatrace</title>
+      <link>/100_wrapup/20_dynatrace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/100_wrapup/20_dynatrace.html</guid>
+      <description>You have a fully feature enabled 15 day Dynatrace trial, so keep using it to monitor and manage your infrastructure and applications!!
+Here are resources to get your started:
+ Learn more about your tenant and install more OneAgents Add other users to your tenant YouTube Videos More Support resources  </description>
+    </item>
+    
+  </channel>
+</rss>
