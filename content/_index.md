@@ -12,11 +12,11 @@ weight: 1
 
 Cloud is essential to your business strategy and a smooth transition is key. Join Dynatrace and AWS for a hands-on workshop to learn how to gain advanced observability automatically at scale as you prepare to move to the cloud, iterate and migrate more applications, and gain the benefits of modern cloud native architectures and operating models.
 
-This workshop puts you in the shoes of an engineer at the easyTravel corporation, presenting you with various problems the company is facing as they migrate to AWS and modernize their applications. It will be your task to solve them.
+This workshop puts you in the shoes of an engineer at Mythical Mysfits, presenting you with various scenarios for the problems the company is facing. It will be your task to solve them.
 
-![image](/images/ez-logo.png)
+![image](/images/mm.png)
 
-Fortunately for you, the team has chosen Dynatrace and AWS and you will work side by side with the easyTravel team to provision AWS resources, install and use Dynatrace to understand the full-stack metrics that are captured, and get answers!
+Fortunately for you, the team has chosen Dynatrace and AWS to help them with the problems they encounter as they migrate and modernize. As a new member of the team, you are tasked with the hands-on work to provision AWS resources, install Dynatrace for AWS, and understand the full-stack metrics that are captured.
 
 ![image](/images/ez-team.png)
 

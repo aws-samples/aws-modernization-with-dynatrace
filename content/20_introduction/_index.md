@@ -8,9 +8,13 @@ weight = 20
 
 ![image](/images/ez-team.png)
 
-The easyTravel Corporation just started their journey to modernize and move to a bigger cloud infrastructure footprint with the goal of more agility and efficiency to optimize workloads, innovate faster, and deliver optimal user experiences. But, with the market downturn in travel bookings, the team must still modernize and do **more with less**.
+Mythical Mysfits is a multinational corporation with verticals in every business segment. The team within their travel division just started their journey to modernize and move to a bigger cloud infrastructure footprint with the goal of more agility and efficiency to optimize workloads, innovate faster, and deliver optimal user experiences. But, with the market downturn in travel bookings, the team must still modernize and do **more with less**.
 
-EasyTravel’s flagship product is their customer facing website where customers can search and book travel. In establishing their modernization goals, the team identified these specific problem areas to address as part of their journey:
+The Mythical Mysfits travel division’s flagship product is the customer facing website, easyTravel, where customers can search and book travel. 
+
+![image](/images/ez-logo.png)
+
+In establishing their modernization goals, the team identified these specific problem areas to address as part of their journey:
 
 * **Lack answers for planning** – The easyTravel application has been built over time and is managed with a patchwork of different legacy and open source infrastructure monitoring tools. As the team is starting to plan their modernization migration strategy, they have no easy way to answer key questions needed for planning: What technologies do we have? What are the best candidates to move? What can’t be moved because of insufficient support? What are the dependencies to other applications and services?
 

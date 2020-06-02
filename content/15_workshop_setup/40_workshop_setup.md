@@ -17,8 +17,6 @@ This step will provision several AWS resources and the Dynatrace configuration n
 * Add VM named: **workshop-ez-docker-1** with a new security group named **security_group_workshop-ez-docker** 
     * At startup, it installs Docker and the EZ travel application using the Docker-Compose implmentation 
     * At startup, it installed the OneAgent for your Dyntrace tenant
-* Add VM named: **workshop-active-gate-1**. 
-    * At startup, it installs the Dynatrace ActiveGate process needed for the AWS monitor integration
 
 2 . Dynatrace configuration
 
