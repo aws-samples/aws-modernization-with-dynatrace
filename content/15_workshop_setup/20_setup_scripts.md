@@ -11,6 +11,7 @@ weight = 20
 First we need to get some scripts that will automate the workshop setup.
 
 ```
+cd ~
 git clone https://github.com/dt-demos/modernize-workshop-setup.git
 ```
 

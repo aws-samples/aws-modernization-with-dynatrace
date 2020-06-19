@@ -99,37 +99,53 @@ The AWS monitoring policy defines the minimum scope of permissions you need to g
 }
 ```
 
-4 . Give the policy a name. For example dynatrace_monitoring_policy. Type it in the Name field.
+4 . Use the policy name of `dynatrace_monitoring_policy`
 
 ![image](/images/dt-aws-dashboard-policy-name.png)
 
 5 . Click `Create policy` button.
 
-#### Step 2 of 3: Create an AWS monitorng role
+#### Step 2 of 3: Create an AWS monitoring role
 
 To give Dynatrace SaaS the role-based monitoring access to your AWS account, you need to create a dedicated monitoring role for Dynatrace in your AWS account. Dynatrace will use this role to authenticate in your AWS environment with the scope of permissions as defined by the monitoring policy. 
 
-1 . In your browser, open a new tab and sign in to Dynatrace to get the External Id that is needs for the IAM role. 
+1 . Go to Identity and Access Management (IAM) in your Amazon Console.
 
-2 . Go to **Settings > Cloud and virtualization > AWS**, click `Connect new instance` button, select `Role based authentication` method. 
+2 . Go to Roles and click the 'create role` button.
+
+![image](/images/dt-aws-dashboard-role.png)
+
+3 . Select the `Another AWS account` tile as to establish trust with the Dynatrace account. Also select the `Require external ID` option button 
+
+![image](/images/dt-aws-dashboard-role-trust-account.png)
+
+{{% notice info %}}
+The AWS Account ID for Dynatrace SaaS (e.g. https://YOUR_TENANT.live.dynatrace.com/) is **509560245411**. This AWS Account ID is the account that the role within the AWS account you are using for the workshop will use.  The Token generated on the Dynatrace AWS connection page, that is used in the external ID field for the AWS role, adds another level of security so that this role can only access the data for your specific Dynatrace tenant and Dynatrace connection. If you were using your own Dynatrace managed cluster, this AWS Account ID value would be different.
+{{% /notice %}}
+
+
+To get the Account and External ID for the AWS role, in your browser, open a new tab and sign in to Dynatrace.
+
+1 . Once logged in, goto **Settings > Cloud and virtualization**
+
+2 . Choose **AWS** menu then click `Connect new instance` button
+
+3 . Enter the name for this connection as `dynatrace-modernize-workshop`
+
+4 . select `Role based authentication` method. 
 
 ![image](/images/dt-aws-dashboard-dt.png)
+
+5 . click the **Copy** button next to the generated token.
 
 {{% notice warning %}}
 Keep this browser window open. We will come back to it shortly to copy the Token and test the connection.
 {{% /notice %}}
 
-3 . Go to Identity and Access Management (IAM) in your Amazon Console.
+Now back in the AWS console tab  **Create Role** page, enter these values:
 
-4 . Go to Roles and create a new role for Dynatrace.
-
-![image](/images/dt-aws-dashboard-role.png)
-
-5 . Select the `Another AWS account` tile as to establish trust with the Dynatrace account. On this section:
-
-* Type `509560245411` as the Account ID that can access your account. 
-* Choose the `Require external ID` option
 * Paste the `Token` value from your Dynatrace AWS connection page in Dynatrace to the `External ID` field
+* Type or copy `509560245411` to the Account ID field
 * Then click the `Next: Permissions` button.
 
 ![image](/images/dt-aws-dashboard-role-account.png)
@@ -150,23 +166,22 @@ Once you've granted AWS access to Dynatrace, it's time to connect Dynatrace to y
 
 1 . Go back on the Dynatrace connection page you still have open
 
-2 . Enter the name for this connection as `dynatrace-modernize-workshop`
+2 . In the Role field, use the name of the role you created easier: `dynatrace_monitoring_role`
 
-3 . In the Role field, use the name of the role you created easier: `dynatrace_monitoring_role`
-
-4 . Type your Account ID (the account you want us to pull metrics from).
+3 . Type your Account ID (the account you want us to pull metrics from).
 
 ![image](/images/dt-aws-dashboard-dt-setup.png)
 
-
-5 . Click `Connect` button to verify and once verified, click the `save` button.
+4 . Click `Connect` button to verify and once verified, click the `save` button.
 
 ## Thats it !
 
-Once the connection is successfully verified and saved, your AWS account will be listed in the Cloud and virtualization settings page and yuou should soon begin to see AWS cloud monitoring data.
-
-![image](/images/dt-aws-dashboard-overview.png)
+Once the connection is successfully verified and saved, your AWS account will be listed in the Cloud and virtualization settings page and you should soon begin to see AWS cloud monitoring data as shown below.
 
 {{% notice info %}}
 Dynatrace makes Amazon API requests every 5 minutes, so it might take a few minutes for data to show up for the first time.
 {{% /notice %}}
+
+![image](/images/dt-aws-dashboard-overview.png)
+
+![image](/images/dt-aws-dashboard.png)
