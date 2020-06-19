@@ -8,17 +8,22 @@ weight = 40
 
 This step will provision several AWS resources and the Dynatrace configuration needed for the workshop.
 
-1 . AWS resources
+1 . AWS resources - using AWS CLI
 
-* Add a KeyPair for the VMs called **dynatrace-modernize-workshop**
+* Add a KeyPair for the VMs called **YOUR_LAST_NAME-dynatrace-modernize-workshop**
+
+2 . AWS resources - using a CloudFormation stack created by the AWS CLI
+
+* Add a CloudFormation stack named **YOUR_LAST_NAME-dynatrace-modernize-workshop**
+* Add a VPC named **YOUR_LAST_NAME-dynatrace-modernize-workshop**
 * Add VM named: **workshop-ez-1** with a new security group named **security_group_workshop-ez**
     * At startup, it installs Docker and the EZ travel application 
-    * At startup, it installed the OneAgent for your Dyntrace tenant
+    * At startup, it installed the OneAgent for your Dynatrace tenant
 * Add VM named: **workshop-ez-docker-1** with a new security group named **security_group_workshop-ez-docker** 
     * At startup, it installs Docker and the EZ travel application using the Docker-Compose implmentation 
-    * At startup, it installed the OneAgent for your Dyntrace tenant
+    * At startup, it installed the OneAgent for your Dynatrace tenant
 
-2 . Dynatrace configuration
+3 . Dynatrace configuration
 
 * Set global [Frequent Issue Detection](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/detection-of-frequent-issues/) settings to Off
 * Adjust the [Service Anomaly Detection](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/how-to-adjust-the-sensitivity-of-problem-detection/) global settings
@@ -37,21 +42,13 @@ cd ~/modernize-workshop-setup/aws
 ./provisionAWSWorkshop.sh
 ```
 
-{{% notice warning %}}
-The script will run in about 1-2 minutes, but the process to provision and initialize easyTravel on the Virtual Machine takes 5-10 minutes, so please be patient.
-{{% /notice %}}
-
-2 . You can let this script run while we move to the the next section.
-
-The start of the script output will look like this:
+The script output will look like this:
 
 ```
 ==========================================
 Provisioning AWS workshop resources
+Starting: Tue Jun 16 14:41:09 EDT 2020
 ==========================================
-
-*** Provisioning 1 hosts of type ez ***
-Provisioning ez (1 of 1): Starting: Thu May 14 22:20:33 EDT 2020
 ...
 ...
 ```
@@ -63,8 +60,19 @@ When it completes, it will look like this:
 ...
 =============================================
 Provisioning AWS workshop resources COMPLETE
+End: Tue Jun 16 14:42:22 EDT 2020
 =============================================
 ```
+
+{{% notice warning %}}
+The script will run fast, but it will take about 1-2 minutes for the CloudFormation script to complete.  You can monitor progress @ https://console.aws.amazon.com/cloudformation/home
+{{% /notice %}}
+
+{{% notice warning %}}
+Once the ec2 instances are running, it will take an additional 4-6 minutes for the easyTravel sample application to completely start, so please be patient.
+{{% /notice %}}
+
+2 . While this is processing, you can review this checklist and move to the the next section.
 
 ### Checklist
 

@@ -105,6 +105,7 @@ Your completed data entry, should look like this.
 ```
 Please confirm all are correct:
 
+Your Last Name           : MY-LAST-NAME
 Dynatrace Base URL       : https://MY-ENVIONMENT.live.dynatrace.com
 Dynatrace Environment ID : MY-ENVIONMENT
 Dynatrace PaaS Token     : MY-PAAS-TOKEN
@@ -113,7 +114,7 @@ AWS Subscription ID    : xxxx-xxxx-xxxx-xxxx-xxxxxxxx
 Is this correct? (y/n): y
 ```
 
-After you confirm, the script will show the saved values in the `creds.jso`n file. You can view again by simply typing cat `creds.json`. NOTE that the AWS Location and AWS Resource Group are pre-configured.
+After you confirm, the script will show the saved values in the `creds.json` file. You can view again by simply typing cat `creds.json`. NOTE that the AWS Location and AWS Resource Group are pre-configured.
 
 {{% notice info %}}
 If you mess up, you can re-run the **inputAWSWorkshopCredentials.sh** script again and will prompt you again for each value.

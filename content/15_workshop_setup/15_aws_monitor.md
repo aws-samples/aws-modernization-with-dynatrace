@@ -105,7 +105,7 @@ The AWS monitoring policy defines the minimum scope of permissions you need to g
 
 5 . Click `Create policy` button.
 
-#### Step 2 of 3: Create an AWS monitorng role
+#### Step 2 of 3: Create an AWS monitoring role
 
 To give Dynatrace SaaS the role-based monitoring access to your AWS account, you need to create a dedicated monitoring role for Dynatrace in your AWS account. Dynatrace will use this role to authenticate in your AWS environment with the scope of permissions as defined by the monitoring policy. 
 
