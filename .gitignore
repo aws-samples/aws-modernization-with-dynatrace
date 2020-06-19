@@ -38,5 +38,4 @@ dynatrace-k8s/
 notes.txt
 *.pptx
 ATEMP/
-publish.sh
 public/
