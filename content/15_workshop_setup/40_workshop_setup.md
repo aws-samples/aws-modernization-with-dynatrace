@@ -16,10 +16,10 @@ This step will provision several AWS resources and the Dynatrace configuration n
 
 * Add a CloudFormation stack named **YOUR_LAST_NAME-dynatrace-modernize-workshop**
 * Add a VPC named **YOUR_LAST_NAME-dynatrace-modernize-workshop**
-* Add VM named: **workshop-ez-1** with a new security group named **security_group_workshop-ez**
+* Add EC2 instance named: **YOUR_LAST_NAME-workshop-ez** with a new security group named **security_group_workshop-ez**
     * At startup, it installs Docker and the EZ travel application 
     * At startup, it installed the OneAgent for your Dynatrace tenant
-* Add VM named: **workshop-ez-docker-1** with a new security group named **security_group_workshop-ez-docker** 
+* Add EC2 instance named: **YOUR_LAST_NAME-workshop-ez-docker** with a new security group named **security_group_workshop-ez-docker** 
     * At startup, it installs Docker and the EZ travel application using the Docker-Compose implmentation 
     * At startup, it installed the OneAgent for your Dynatrace tenant
 

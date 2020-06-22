@@ -8,9 +8,9 @@ weight: 10
 
 [AWS Cloud9](https://aws.amazon.com/cloud9/) is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
 
-### Add a new Cloud9 environment
+### Add a new Cloud9 IDE environment
 
-1 . Navigate to the the cloud9 console page from [this link](https://console.aws.amazon.com/cloud9/home) or just search for it.
+1 . Navigate to the [cloud9 console](https://console.aws.amazon.com/cloud9/home) or just search for it under the **AWS console services** menu.
 
 ![image](/images/c9-search.png)
 
@@ -30,21 +30,26 @@ weight: 10
 This will take about 1-2 minutes to provision
 {{% /notice %}}
 
-5. When it comes up, customize the environment by closing the **welcome tab**
-and **lower work area**, and opening a new **terminal** tab in the main work area.
+### COnfigure Cloud9 IDE environment
+
+When the environment comes up, customize the environment by:
+
+1 . Close the **welcome page** tab
+
+2 . Close the **lower work area** tab
+
+3 . Open a new **terminal** tab in the main work area.
 
 ![c9before](/images/c9before.png)
 
-6. Your workspace should now look like this:
+Your workspace should now look like this and can hide the left hand environment explorer by clicking on the left side **environment** tab.
 
 ![c9after](/images/c9after.png)
 
 {{% notice tip %}}
-If you like this theme, you can change your theme by selecting **View / Themes** in the Cloud9 workspace menu.
+If you don't like this dark theme, you can change it from the **View / Themes** Cloud9 workspace menu.
 {{% /notice %}}
 
 {{% notice tip %}}
-Ad blockers, javascript disablers, and tracking blockers should be disabled for
-the cloud9 domain, or connecting to the workspace might be impacted.
-Cloud9 requires third-party-cookies. You can whitelist the [specific domains]( https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading).
+Cloud9 requires third-party-cookies. You can whitelist the [specific domains]( https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading).  You are having issues with this, Ad blockers, javascript disablers, and tracking blockers should be disabled for the cloud9 domain, or connecting to the workspace might be impacted.
 {{% /notice %}}

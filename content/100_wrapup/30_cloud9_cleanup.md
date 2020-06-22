@@ -1,5 +1,5 @@
 +++
-title = "AWS Cleanup"
+title = "Cloud Cleanup"
 chapter = false
 weight = 10
 +++

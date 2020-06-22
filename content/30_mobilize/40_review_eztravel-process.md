@@ -6,23 +6,31 @@ weight: 40
 
 ![image](/images/florian.png)
 
-In the Smartscape view, we saw the visualizations of the relationships in vertical stack and as well as the relationships spatially. Now lets view the process and service tiers to see the relationships from a single entity.
+In the Smartscape view, we saw the visualizations of the relationships in vertical stack and as well as the relationships spatially. Now lets view the process and service running on the host.
 
-Lets return back to the host page where we will explore each of the tiers for the VM. To get back there, from the right hand menu in Dynatrace choose `hosts` then click on the host with the prefix of **workshop-ez-1**.
+{{% notice note %}}
+As you plan your migration, you need more than just host level metrics.  Knowing the details for each services, **BEFORE** you change it, will lower the risk of impacting the business.
+{{% /notice %}}
 
-Now on the host page, click on the **com.dynatrace.easytravel.business.backend.jar easytravel-*-x*** process in the `Processes and Containers` section.
+## Host view
+
+Return back to the host view for the host with the prefix of **YOUR_LAST_NAME-workshop-ez** and locate the **Processes and Containers** section.
+
+![image](/images/host-arrow-process.png)
+
+Click on the **com.dynatrace.easytravel.business.backend.jar easytravel-*-x*** process in the **Processes and Containers** section to open the process detail view.
 
 ![image](/images/host-process.png)
 
 ## Process view
 
-You should be on the process page where you will see information for this backend process.
+You should be on the process page where you will see information for this backend process.  Follow the picture below to locate the following:
 
-1. Expand the Properties to see data about the process such as JVM version and open ports
-1. Processs that call this process (Inbound)
-1. Services that are served by this process. In this case there are multiple
-1. Processs that this process calls (Outbound)
-1. Process specific metrics
+1. Click on the **Properties** line to toggle on/off to see additional data about the process such as JVM version and open ports
+1. Click to view the processes that call this process (Inbound)
+1. Click to view the services that are served by this process. In this case there are multiple
+1. Click to view the processes that this process calls (Outbound)
+1. Click to view the Process specific time-services metrics
 
 ![image](/images/process-view.png)
 
@@ -34,44 +42,21 @@ Note that Dynatrace automatically recognizes many common process like Tomcat and
 
 Now lets review a specific service.
 
-1. Click the `services` square above the host infographic to open the list of services
-1. From the list of services, choose the `BookingService`
+1. Click the **services** square above the host infographic to open the list of services
+1. From the list of services, choose the **BookingService**
 
 ![image](/images/process-view-list.png)
 
 ## Service View
 
-You should be on the service page where you will see information for this specific service
+You should be on the service page where you will see information for this specific service.  Follow the picture below to locate the following:
 
-1. Expand the Properties to see data about the process such as JVM version and open ports
-1. Services that call this service (Inbound)
-1. Services that this service calls (Outbound)
+1. Click on the **Properties** line to toggle on/off to see additional data
+1. Click to view the services that call this service (Inbound)
+1. Click to view the services that this service calls (Outbound)
 
 ![image](/images/service-view.png)
 
-## Service level backtrace
-
-You should be on the service level backtrace page where you will see information for this specific service.
-
-Dynatrace understands your applications transactions from end to end. This transactional insight is visualized several ways like the backtrace. The backtrace tree view represents the sequence of services that led to this service call, beginning with the page load or user action in the browser.
-
-![image](/images/service-backtrace.png)
-
-Follow along using these numbers as reference:
-
-1 . This this the booking service
-
-2 . booking service is called by the Customer Frontend
-
-3 . Customer Frontend is a Tomcat Server
-
-
-Now lets see another visulization called the service flow. For this and refering to the picture above:
-
-4 . Click the `...` in the row for the `Customer Frontend`
-
-5 . Choose the `Service Flow` menu item
-
 ## How this helps
 
-The risk of moving specific components (host, database, processes, services, application) depends on the complexity and interdependency to the rest of the environment architecture. For example, before migrating a database we can look at Smartscape to understand which services are actively using this database and in which capacity.
+Very quickly we have seen what processes and services are running on a host AND more importantly, what processes and services call (inbound) and are being called (inbound).  Having a real-time picture is certainly more accurate that out of date documentation.

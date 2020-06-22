@@ -1,18 +1,54 @@
 ---
-title: "Service Flow"
+title: "Backtrace and Service Flow"
 chapter: false
 weight: 50
 ---
 
 ![image](/images/florian.png)
 
-As just mentioned, Dynatrace understands your applications’ transactions from end to end. This transactional insight is visualized through Service flow, which illustrates the sequence of service calls that are triggered by each service request in your environment.
+We just saw one way to review process and service communication, but lets look at how Dynatrace understands your applications’ transactions from end to end. and visualizes through **Service Backtraces** and **Service flows**.
 
-With Service flow, you see the flow of service calls from the perspective of a single service, request, or their filtered subset. Along with the specific services that are triggered, you can also see how each component of a request contributes to the overall response time.
+* With **Service backtrace**, you see the calls **TO** a service.,
 
-Lets review what you are seeing on the service flow page.
+* With **Service flow**, you see the flow of service calls **FROM** a service, request, or their filtered subset. Along with the specific services that are triggered, you can also see how each component of a request contributes to the overall response time.
+
+{{% notice note %}}
+As you plan your migration, it is important to gain a complete picture of interdependency to the rest of the environment architecture at host, processes, services, application perspectives. Since time is always scarce, being able to do this in a single place can shorten assessment timelines.
+{{% /notice %}}
+
+## Service backtrace
+
+From the same **BookingService** service, click on the **Analyze Backtrace** button.
+
+![image](/images/service-backtrace-arrow.png)
+
+You should be on the service backtrace page where you will see information for this specific service.
+
+![image](/images/service-backtrace.png)
+
+Dynatrace understands your applications transactions from end to end. This transactional insight is visualized several ways like the backtrace. The backtrace tree view represents the sequence of services that led to this service call, beginning with the page load or user action in the browser.
+
+Follow the picture above to locate the the services that were called in what order that called the **BookingService**
+
+1 . The starting point is the **BookingService**
+
+2 . **BookingService** is called by the **Customer Frontend**
+
+3 . **Customer Frontend** is a Tomcat Server where end user request started
+
+## Service Flow
+
+Now lets see another visulization called the service flow. TO navigate to this view, refer to these steps and the picture below:
+
+1 . Click the `...` in the row for the **Customer Frontend**
+
+2 . Choose the **Service Flow** menu item
+
+![image](/images/service-backtrace-serviceflow.png)
 
 ## Response time perspective
+
+You should now be on the **Service flow** page.
 
 ![image](/images/service-flow.png)
 
@@ -56,10 +92,8 @@ Within easyTravel, the easyTravelBusiness database is actually an [Apache Derby 
 
 ![image](/images/service-db.png)
 
-## What did we learn
-
-From both these perspectives, We now know that the bulk of the time is spent in the CreditCardValidation service, BUT more importantly and we also learned that both the BookingService and the CreditCardValidation service communicate to this database. **An important detail for planning!!**
-
 ## How this helps
+
+From both these perspectives and this example, we now know that the bulk of the time is spent in the CreditCardValidation service, BUT more importantly and we also learned that both the BookingService and the CreditCardValidation service communicate to this database. **An important detail for planning!!**
 
 The service flow and the database statements will also help you right size your database instance in the new environment and scale depending on the resource consumption during regular business and off business hours.

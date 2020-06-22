@@ -87,11 +87,11 @@ Only include the base URL up to the **...dynatrace.com**
 
 3 . Enter a name for your token (e.g. workshop)
 
-4 . Leave the default options and click Generate
+4 . Ensure these options are selected, then click Generate
 
 ![image](/images/dt-api-token-settings.png)
 
-5 . Expand the newly created token, copy the token value and paste it to your bastion terminal script prompt : API token
+5 . Expand the newly created token, copy the token value and paste it to your Cloud9 terminal script prompt : API token
 
 ![image](/images/dt-api-token-copy.png)
 
@@ -110,7 +110,6 @@ Dynatrace Base URL       : https://MY-ENVIONMENT.live.dynatrace.com
 Dynatrace Environment ID : MY-ENVIONMENT
 Dynatrace PaaS Token     : MY-PAAS-TOKEN
 Dynatrace API Token      : MY-API-TOKEN
-AWS Subscription ID    : xxxx-xxxx-xxxx-xxxx-xxxxxxxx
 Is this correct? (y/n): y
 ```
 

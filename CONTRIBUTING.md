@@ -19,7 +19,7 @@ reported the issue. Please try to include as much information as you can. Detail
 
 # To view this content locally
 
-* install [hugo](https://gohugo.io/)
+* install [hugo](https://gohugo.io/)  **Site tested in Hugo v0.72.0 **
     * macOS: `brew install hugo`
     * Windows: `choco install hugo -confirm`
 * clone this repo

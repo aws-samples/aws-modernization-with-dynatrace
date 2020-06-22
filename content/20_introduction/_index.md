@@ -29,3 +29,7 @@ In establishing their modernization goals, the team identified these specific pr
 :small_blue_diamond: Understand why the easyTravel team picked Dynatrace
 
 :small_blue_diamond: Understand the areas where Dynatrace helps AWS Cloud Adoption journeys
+
+{{% notice note %}}
+Please read through the next two pages, but note that there are no exercises to complete. 
+{{% /notice %}}

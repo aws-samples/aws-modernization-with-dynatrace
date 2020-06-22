@@ -8,9 +8,22 @@ weight = 10
 
 ![image](/images/jess.png)
 
-In this section, your will complete the following:
+You will need to navigate across multiple browser tabs as you completed remaining workshop modules, so I recommend you make a new browser window that will eventually have these tabs:
 
-* Open AWS Cloud9 Shell for running various UNIX commands
-* Capture environment and token info needed for automation scripts
-* Provision easyTravel application
-* Verify EasyTravel application is running
+![image](/images/broswer-tabs.png)
+
+* AWS console
+* CLoud9 IDE Environment
+* Dynatrace console
+* Workshop materials
+* EasyTravel sample application
+
+## Objectives of this section
+
+:small_blue_diamond: Open AWS Cloud9 IDE for running various UNIX commands
+
+:small_blue_diamond: Capture environment and information needed for automation scripts
+
+:small_blue_diamond: Provision VPN and EC2 instances that run the easyTravel application
+
+:small_blue_diamond: Verify EasyTravel application is running

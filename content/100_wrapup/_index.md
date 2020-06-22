@@ -25,12 +25,12 @@ You should come away from this workshop understanding how to:
 
 ## Next Steps
 
-Now put the knowledge from this workshop to use! You now have a full featured Dynatrace tenant to use in your environment and AWS subscription to continue to learn too.
+Now put the knowledge from this workshop to use! You now have a full featured Dynatrace tenant to use in your environment and AWS account to continue to learn too.
 
 Explore the material on Dynatrace’s website, Dynatrace’s blog as well as many YouTube tutorials.
 
 ## Workshop Cleanup
 
-Follow these last two steps to cleanup your AWS subscription and learn how you can continue to use Dynatrace.
+Follow these last two steps to cleanup your AWS account and learn how you can continue to use Dynatrace.
 
 {{% children showhidden="false" %}}
