@@ -8,7 +8,9 @@ weight = 10
 
 ![image](/images/jess.png)
 
-You will need to navigate across multiple browser tabs as you completed remaining workshop modules, so I recommend you make a new browser window that will eventually have these tabs:
+Hi Jess here again. Now that you have your Dynatrace and AWS accounts in place, you will now provision AWS resources that run the easyTravel application.
+
+But to keep yourself organized and to easily navigate across the various consoles and views, I recommend you make a new browser window and maintain tabs for each of the following as you are requested to add them.  Below is what you will eventually have:
 
 ![image](/images/broswer-tabs.png)
 
@@ -20,10 +22,10 @@ You will need to navigate across multiple browser tabs as you completed remainin
 
 ## Objectives of this section
 
-:small_blue_diamond: Open AWS Cloud9 IDE for running various UNIX commands
+:small_blue_diamond: Provision AWS Cloud9 IDE environment
 
-:small_blue_diamond: Capture environment and information needed for automation scripts
+:small_blue_diamond: Configure the AWS Monitoring Dynatrace Integration 
 
-:small_blue_diamond: Provision VPN and EC2 instances that run the easyTravel application
+:small_blue_diamond: Create and gather Dynatrace URLs & Tokens
 
-:small_blue_diamond: Verify EasyTravel application is running
+:small_blue_diamond: Provision AWS resources that run the easyTravel application

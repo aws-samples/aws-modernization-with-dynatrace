@@ -10,31 +10,31 @@ weight = 30
 The next set of steps assume that your Dynatrace tenant is fully provisioned and you are logged in. 
 {{% /notice  %}}
 
-Gather environment and token info To configure and deploy easyTravel and for exercises later in the workshop, we will need the following info from your Dynatrace environment
+### Login into Dynatrace
+
+{{% notice info %}}
+You can always login to your tenant using the URL **https://[ENVIRONMENT ID].live.dynatrace.com** or by using the the SaaS login link on the top right of the Dynatrace home page.
+{{% /notice %}}
+
+### Collect inputs to workshop setup
+
+You will next gather information needed to configure and deploy easyTravel application. Specifically we will need the following info from your Dynatrace environment:
 
 * Base URL
 * Environment ID
 * API token
 * PaaS token
 
-For this, have provided a simple UNIX shell script for this workshop that prompts for these values and writes them to a file called `creds.json`. Later in the workshop steps, there are a few other simple UNIX shell that will automate the step that read this file so that you don’t need to type or copy-paste these values over and over again during the workshop.
+For this, have provided a simple UNIX shell script for this workshop that prompts for these values and writes them to a file called **creds.json**. Later in the workshop steps, there are a few other simple UNIX shell that will automate the step that read this file so that you don’t need to type or copy-paste these values over and over again during the workshop.
 
-### Capture Dynatrace environment and token info
+### Lets Begin
 
-So start by running this script that will provide prompts. Follow the sections below to get these values and paste them against the prompt. If you mess up, you can re-run the script.
-
-1 . run UNIX shell script
+From the Cloud9 window, run these commands to run this script that will provide a set of prompts for you to enter values. If you mess up, you can re-run the script.
 
 ```
 cd ~/modernize-workshop-setup/aws
 ./inputAWSWorkshopCredentials.sh
 ```
-
-2 . Login into Dynatrace
-
-{{% notice info %}}
-You can always login to your tenant using the URL **https://[ENVIRONMENT ID].live.dynatrace.com** or by using the the SaaS login link on the top right of the Dynatrace home page.
-{{% /notice %}}
 
 #### Input 1 of 5: Your last name
 In the UNIX terminal, enter your last name at the prompt. This will be added as a prefix for the AWS resource group name.
