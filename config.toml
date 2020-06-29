@@ -45,24 +45,27 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-graduation-cap'></i> Dynatrace AWS Support"
+name = "<i class='fas fa-chalkboard'></i> Dynatrace"
 url = "https://www.dynatrace.com/technologies/aws-monitoring/"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='far fa-lightbulb'></i> Modernizating with AWS"
+name = "<i class='fas fa-chalkboard'></i> Modernizating with AWS"
 url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
 weight = 20
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
+name = "<i class='fas fa-chalkboard'></i> Modernization Workshops"
 url = "https://awsworkshop.io"
 weight = 30
 
 [[menu.shortcuts]]
-name = "<i class='far fa-lightbulb'></i> Workshop feedback"
+name = "<i class='fas fa-chalkboard'></i> Workshop feedback"
 url = "https://github.com/aws-samples/aws-modernization-with-dynatrace"
 weight = 40
 
-[blackfriday]
+[markup]
+defaultMarkdownHandler = "blackfriday"
+
+[markup.blackFriday]
 hrefTargetBlank = true

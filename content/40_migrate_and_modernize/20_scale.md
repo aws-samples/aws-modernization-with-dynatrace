@@ -19,7 +19,7 @@ The final step be to put on AWS Kubernetes Service (AKS) and AWS Cosmos DB once 
 
 ## Lets see what it looks like
 
-In Dynatrace, goto the hosts page and open the host with **workshop-ez-docker-1** as the prefix. This VM was also provisioned earlier in this workshop. But this time, easyTravel was provisioned using Docker and Docker Compose. You can check out the docker-compose.yml file here
+In Dynatrace, goto the hosts page and open the host with **YOUR_LAST_NAME-workshop-ez-docker** as the prefix. This VM was also provisioned earlier in this workshop. But this time, easyTravel was provisioned using Docker and Docker Compose. You can check out the docker-compose.yml file here
 
 Now instead of a bunch of standalone Java processes, the host page shows the detected Docker containers. **And it did this with NO additonal configuration changes or changes to the Docker image!!**
 

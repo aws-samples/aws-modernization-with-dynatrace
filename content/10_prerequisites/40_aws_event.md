@@ -4,9 +4,6 @@ chapter: false
 weight: 40
 ---
 
-## **** NEED TO UPDATE THIS PAGE WITH THE RIGHT FLOW & PICTURES *****
-## **** WHAT REGION MUST WE USE?? *****
-
 ![image](/images/jess.png)
 
 This workshop creates an new AWS account. You will need the **Participant Hash** provided upon entry and your email address.

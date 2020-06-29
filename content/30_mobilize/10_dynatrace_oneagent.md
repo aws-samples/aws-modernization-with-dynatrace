@@ -6,7 +6,7 @@ weight = 10
 
 ![image](/images/florian.png)
 
-Dynatraces OneAgent provides the industry’s largest technology coverage, spanning cloud native to legacy environments in an all-in-one solution. OneAgent provides:
+[Dynatraces OneAgent](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent/) provides the industry’s largest technology coverage, spanning cloud native to legacy environments in an all-in-one solution. OneAgent provides:
 
 * A set of specialized processes that run on each monitored host. OneAgent collects metrics from the operating system it runs on and compares the metrics to performance metrics. The metrics are then reported to Dynatrace.
 * Monitors technologies like Java, Node.js, .NET and more in greater detail by injecting itself into processes and monitors performance with code level insights.
@@ -15,6 +15,8 @@ Dynatraces OneAgent provides the industry’s largest technology coverage, spann
 ![image](/images/dt-oneagent.png)
 
 The OneAgent can be automatically installed and rolled out through configuration management tools such as Chef, Puppet, Ansible, Terraform or by just including the download and install into any custom deployment script.
+
+Check out this blog for another option to [Simplify OneAgent installation with AWS CloudFormation Registry](https://www.dynatrace.com/news/blog/simplify-oneagent-installation-with-aws-cloudformation-registry/)
 
 {{% notice info %}}
 You can review the process to manually install and try it on one of your hosts with [this guide](http://AWS-modernize-workshop.alliances.dynatracelabs.com/120_more.html).

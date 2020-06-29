@@ -10,6 +10,12 @@ Within Dynatrace, services can take the form of web services, web containers, da
 
 Web applications consist of web pages that are served by web servers and web containers, for example Tomcat. Web and mobile applications are built upon services that process requests like web requests, web service calls, and messaging. Such “server-side services” can take the form of web services, web containers, database requests, custom services, and more. Services may in turn call other services such as web services, remote services, and databases services.
 
+{{% notice note %}}
+As you plan your migration, it is important to gain a complete picture of interdependency to the rest of the environment architecture at host, processes, services, application perspectives. Since time is always scarce, being able to do this in a single place can shorten assessment timelines.
+{{% /notice %}}
+
+## View the complete end to end flow 
+
 Lets now take a look at the transactions and Services by click on the `Transactions and services` left side Dynatrace menu.
 
 There alot of services in this list. To help manange this list a [Dynatrace auto-tagging rule](https://www.dynatrace.com/support/help/how-to-use-dynatrace/tags-and-metadata/) was added by the workshop scripts and we can now use a tag filter to make this list more manageble.

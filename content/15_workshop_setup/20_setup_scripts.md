@@ -6,6 +6,10 @@ weight = 20
 
 ![image](/images/jess.png)
 
+{{% notice note %}}
+For these steps, you need to be back in the AWS Cloud9 IDE.
+{{% /notice %}}
+
 ### 1. Clone the workshop scripts
 
 First we need to get some scripts that will automate the workshop setup.
@@ -17,7 +21,7 @@ git clone https://github.com/dt-demos/modernize-workshop-setup.git
 
 ### 2. Install workshop tools
 
-Run these commands to call the script that will upgrade the AWS CLI to version 2 and install a JSON parsing utility called [jq](https://stedolan.github.io/jq/).
+Run these commands to call the script that will upgrade the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) to version 2 and install a JSON parsing utility called [jq](https://stedolan.github.io/jq/).
 
 ```
 cd ~/modernize-workshop-setup/aws

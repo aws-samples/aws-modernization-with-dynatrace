@@ -15,7 +15,7 @@ Navigate to Sign up for a [15-day trial](20_dynatrace_trial.html)
 ### Option 2: I already have a Dynatrace tenant
 
 {{% notice warning %}}
-You will need admin rights to configure configuration rules and install agents. Ensure you have authority within your organization to do this in your tenant.
+You will need admin rights to add & delete configuration rules using the Dynatrace API and deploy OneAgents. Ensure you have authority within your organization to do this in your tenant.
 {{% /notice %}}
 
 If you are running the workshop on your own Dynatrace tenant, then navigate to: [AWS prerequisites](/10_prerequisites/30_aws.html) step.

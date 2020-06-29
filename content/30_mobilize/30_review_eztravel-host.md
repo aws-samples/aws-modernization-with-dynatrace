@@ -6,17 +6,17 @@ weight: 30
 
 ![image](/images/florian.png)
 
-Now lets review what the OneAgent automatically discovered using these various Dynatrace views:
+In this next few sections, review what the OneAgent automatically discovered for the host, services, processes, and the complete dependency mapping for the easyTravel application.  
 
-* Host
-* Smartscape
-* Services and Service Flow
-* Transactions and services
-* Databases
-* Technologies
-* Host view
+{{% notice note %}}
+As you plan your migration, each of these views will give insights in accessing the profile, consumption and depenencies to other systems and services.
+{{% /notice %}}
 
-You should be on the host page, but if not, from the right hand menu in Dynatrace choose `hosts` then click on the host with the prefix of **workshop-ez-1**.
+## Host view
+
+From the right hand menu in Dynatrace choose `hosts` then click on the host with the prefix of **YOUR_LAST_NAME-workshop-ez**.
+
+![image](/images/dt-host-list.png)
 
 On host page, you will see basic infrastructure information for the host.
 
@@ -57,4 +57,4 @@ Feel free to explore the Smartscape.
 
 ## How this helps
 
-Smartscape shows all the dependencies of a given service. Those include connections to queues, web servers, app servers, and a native process. This information allows us to better plan the migration, as all depending services must be considered during the migration.
+Smartscape shows all the dependencies of a given service. Those include connections to queues, web servers, app servers, and a native process. The host view shows historical and live time-series data for usage as well as the consuming processes. This information allows us to better plan the migration, as all depending services must be considered during the migration.
