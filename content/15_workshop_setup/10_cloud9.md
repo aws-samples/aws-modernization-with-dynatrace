@@ -10,19 +10,23 @@ weight: 10
 
 ### Add a new Cloud9 IDE environment
 
-1 . Navigate to the [cloud9 console](https://console.aws.amazon.com/cloud9/home) or just search for it under the **AWS console services** menu.
+1 . Within the AWS console, use the region drop list to select **us-west-2 (Oregon)**.  We are doing this because the workshop script will provsion the resources in this same region.
+
+![image](/images/aws-pick-region.png)
+
+2 . Navigate to the [cloud9 console](https://console.aws.amazon.com/cloud9/home) or just search for it under the **AWS console services** menu.
 
 ![image](/images/c9-search.png)
 
-2 . Click the `Create environment` button
+3 . Click the `Create environment` button
 
 ![image](/images/c9-create.png)
 
-3 . For the name use `dynatrace-workshop`
+4 . For the name use `dynatrace-workshop`
 
 ![image](/images/c9-name.png)
 
-4 . Keep the default settings and create the environment
+5 . Keep the default settings and create the environment
 
 ![image](/images/c9-settings.png)
 
