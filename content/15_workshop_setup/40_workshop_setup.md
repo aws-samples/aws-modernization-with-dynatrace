@@ -8,7 +8,7 @@ weight = 40
 
 This step will provision several AWS resources and the Dynatrace configuration needed for the workshop.
 
-### Lets Begin
+### Let’s Begin
 
 From the Cloud9 window, run these commands to start the provisioning process:
 
@@ -51,7 +51,7 @@ Once the ec2 instances are running, it will take an additional 4-6 minutes for t
 
 1 . AWS resources - using AWS CLI
 
-* Add a KeyPair for the VMs called **YOUR_LAST_NAME-dynatrace-modernize-workshop**
+* Add a KeyPair for the EC2 Instances called **YOUR_LAST_NAME-dynatrace-modernize-workshop**
 
 2 . AWS resources - using a CloudFormation stack created by the AWS CLI
 
@@ -61,7 +61,7 @@ Once the ec2 instances are running, it will take an additional 4-6 minutes for t
     * At startup, it installs Docker and the EZ travel application 
     * At startup, it installed the OneAgent for your Dynatrace tenant
 * Add EC2 instance named: **YOUR_LAST_NAME-workshop-ez-docker** with a new security group named **security_group_workshop-ez-docker** 
-    * At startup, it installs Docker and the EZ travel application using the Docker-Compose implmentation 
+    * At startup, it installs Docker and the EZ travel application using the Docker-Compose implementation 
     * At startup, it installed the OneAgent for your Dynatrace tenant
 
 3 . Configure Dynatrace using the Dynatrace API
@@ -73,6 +73,12 @@ Once the ec2 instances are running, it will take an additional 4-6 minutes for t
 * Add modernize-workshop [dashboard](https://www.dynatrace.com/support/help/how-to-use-dynatrace/dashboards-and-charts/)
 * Add autoTagging rule for a [tag](https://www.dynatrace.com/support/help/how-to-use-dynatrace/tags-and-metadata/) called workshop-group.
 * Add [application](https://www.dynatrace.com/support/help/how-to-use-dynatrace/real-user-monitoring/setup-and-configuration/web-applications/initial-configuration/define-your-applications-via-the-my-web-application-placeholder/) for EasyTravelOrange and EasyTravelOrangeDocker
+
+### Review CloudFormation Output
+
+As mentioned above, it may take a few minutes, but you can check the CloudFormation output to ensure that all the AWS resources were provisioned with no rollbacks. For example, the CloudFormation may rollback due to VPC limits being reached. In that scenario, delete one of the VPCs and retry the script.  If you expand the **events** tab, you should see **CREATE_COMPLETE** for the resources as shown below.
+
+![image](/images/aws-cf-complete.png)
 
 ### Checklist
 

@@ -8,7 +8,7 @@ weight = 10
 
 EasyTravel is a monolithic Java application that as we saw earlier provides several web services like Booking, Authentication, and Journey.
 
-Our overall goal at easyTravel is to breakout each of these backend services into seperate services. This will allow us to have seperate Continuous Integration (CI) pipelines to build and test each service independantly. By putting these service into Docker images, we gain the ability to deploy the service into modern platforms like Kubernetes using AWS managed services. By adding Continous Deployment (CD) to our process, we will vastly increase our ability to delivery features faster to our customers.
+Our overall goal at easyTravel is to breakout each of these backend services into separate services. This will allow us to have separate Continuous Integration (CI) pipelines to build and test each service independantly. By putting these service into Docker images, we gain the ability to deploy the service into modern platforms like Kubernetes using AWS managed services. By adding Continuous Deployment (CD) to our process, we will vastly increase our ability to delivery features faster to our customers.
 
 ![image](/images/adapt-microservices.png)
 
@@ -21,7 +21,7 @@ Referring to the picture above, notice how the INTERMEDIATE STEP show the `Journ
 * JourneyService
 * checkDestination
 
-As the lead developer, Henrik knows that within the code the checkDestination is a seperate Java methods and he would like to understand how often it gets called and the typical response times. This will help establish the Services Levels that will be required for monitoring and sizing.
+As the lead developer, Henrik knows that within the code the checkDestination is a separate Java method and he would like to understand how often it gets called and the typical response times. This will help establish the Services Levels that will be required for monitoring and sizing.
 
 ## The Setup
 
@@ -39,7 +39,7 @@ During the workshop provisioning we used the [Dynatrace API](https://www.dynatra
 
 ## Service Review
 
-1 . In Dynatrace, open the `transactions and services` page from the the left side menu.
+1 . In Dynatrace, open the `transactions and services` page from the left side menu.
 
 2 . Use the Management Zones filter to pick the `ez-travel` option
 
@@ -57,6 +57,6 @@ During the workshop provisioning we used the Dynatrace Management Zones API to a
 
 ![image](/images/check-destination.png)
 
-## What did we learn
+## What did we learn?
 
 The `CheckDestination` service is called nearly each invocation to the `JourneyService` and its not a high contributor to overall time. So Henrik now has the informaton he needs to make smarter re-architecture and re-platforming decisions

@@ -13,15 +13,15 @@ The intermediate step will be to support his developments efforts:
 * **Refactor** the backend Java application to be packaged and served within a Docker image
 * **Rebuild** relational in-memory Apache Derby database to Mongo
 
-The final step be to put on AWS Kubernetes Service (AKS) and AWS Cosmos DB once the Cloud operations team has complete their certification of AKS and Cosmos.
+The final step be to put on AWS Kubernetes Service (EKS) and AWS DynamoDB once the Cloud operations team has completed their certification of AKS and DynamoDB.
 
 ![image](/images/adapt-docker.png)
 
-## Lets see what it looks like
+## Let’s see what it looks like
 
-In Dynatrace, goto the hosts page and open the host with **YOUR_LAST_NAME-workshop-ez-docker** as the prefix. This VM was also provisioned earlier in this workshop. But this time, easyTravel was provisioned using Docker and Docker Compose. You can check out the docker-compose.yml file here
+In Dynatrace, go to the hosts page and open the host with **YOUR_LAST_NAME-workshop-ez-docker** as the prefix. This EC2 Instance was also provisioned earlier in this workshop. But this time, easyTravel was provisioned using Docker and Docker Compose. You can check out the docker-compose.yml file here
 
-Now instead of a bunch of standalone Java processes, the host page shows the detected Docker containers. **And it did this with NO additonal configuration changes or changes to the Docker image!!**
+Now instead of a bunch of standalone Java processes, the host page shows the detected Docker containers. **And it did this with NO additional configuration changes or changes to the Docker image!!**
 
 Go ahead and click on the `View container` button to see an overview of each container.
 
@@ -43,7 +43,7 @@ You can read more about Dynatrace Docker Monitoring [here](https://www.dynatrace
 
 ## Validate SLAs
 
-During the workshop provisioning we used the [Dynatrace API](https://www.dynatrace.com/support/help/dynatrace-api/configuration-api/dashboards-api/) to add Dashbaord that allows for a quick comparison of the non-Dockerized and Dockerized implementations of easyTravel.
+During the workshop provisioning we used the [Dynatrace API](https://www.dynatrace.com/support/help/dynatrace-api/configuration-api/dashboards-api/) to add Dashboard that allows for a quick comparison of the non-Dockerized and Dockerized implementations of easyTravel.
 
 Navigate the dashboards from the left side menu to analyze volumes, response times, and load.
 

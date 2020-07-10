@@ -12,7 +12,7 @@ We just learned how we can get great information on back-end services, front-end
 
 ![image](/images/henrik.png)
 
-Meet Henrik, from the development team who is leading the easyTravel modernization implementation and we will work together with him as he begins the journey to move from the current easyTravel monolith to microservices.
+Meet Henrik, from the development team who is leading the easyTravel modernization implementation. We will work together with him as he begins the journey to move from the current easyTravel monolith to microservices.
 
 ## Objectives of this section
 

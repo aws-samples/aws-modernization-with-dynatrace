@@ -8,7 +8,7 @@ weight = 100
 
 In addition to monitoring your AWS workloads using OneAgent, Dynatrace provides integration with AWS Monitor which adds Infrastructure monitoring to gain insight even into serverless application scenarios.
 
-If you set up an AWS monitor earlier in the [Workshop setup](/15_workshop_setup/15_aws_monitor.html), you should now have data so lets review it now.
+If you set up an AWS monitor earlier in the [Workshop setup](/15_workshop_setup/15_aws_monitor.html), you should now have data so Let’s review it now.
 
 ## Review the AWS monitor data
 
@@ -20,7 +20,7 @@ Dynatrace has been gathering metrics by calling the Amazon API every 5 minutes. 
 
 ![image](/images/dt-aws-dashboard.png)
 
-Click into the EC2 instances and you should find the **Cloud9** instance which does NOT have a Dynatrace OneAgent running on it.  Notice too how you automatically get regional and instance type data.
+Click in the blue availability zone section located under the grey header labeled EC2 and you should see the list of availability zones below.  Click on **us-west-2c** and the EC2 instances will be listed. You should  find the Cloud9 instance which does NOT have a Dynatrace OneAgent running on it. Notice too how you automatically get regional and instance type data.
 
 ![image](/images/aws-monitor-list.png)
 

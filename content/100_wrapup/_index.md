@@ -5,11 +5,11 @@ weight = 100
 visible = false
 +++
 
-## Thank you for following this workshop!!
-
-With your help, the easyTravel team has simplified operations, reduced modernization and migration risk, sped up mean time to resolution, and is ready for happy travelers ahead!
+With your help, the easyTravel team has simplified operations, reduced modernization and migration risk, sped up mean time to resolution, and is ready for happy travelers to visit easyTravel!
 
 ![image](/images/ez-team.png)
+
+## Recap
 
 You have now seen first-hand how Dynatrace’s AI can transform how your work through its ability cutting through the noise, continuously watching for anomalies, and serving precise answers to what is impacting your business.
 
@@ -25,12 +25,17 @@ You should come away from this workshop understanding how to:
 
 ## Next Steps
 
-Now put the knowledge from this workshop to use! You now have a full featured Dynatrace tenant to use in your environment and AWS account to continue to learn too.
+Explore the material on Dynatrace’s website, Dynatrace’s blog as well as many YouTube tutorials. Here are a few to get you started:
 
-Explore the material on Dynatrace’s website, Dynatrace’s blog as well as many YouTube tutorials.
+* [Learn more about your tenant and install more OneAgents](https://www.dynatrace.com/support/help/get-started/get-started-with-dynatrace-saas/)
+* [Add other users to your tenant](https://www.dynatrace.com/support/help/how-to-use-dynatrace/user-management-and-sso/manage-groups-and-permissions/)
+* [YouTube Videos](https://www.youtube.com/channel/UCcYJ-5q_AfmjQ4XTjTS0o3g)
+* [More Support resources](https://www.dynatrace.com/services-support/#support-resources-section)
+
+You have a fully feature enabled 15 day Dynatrace trial, so keep using it to monitor and manage your infrastructure and applications.
 
 ## Workshop Cleanup
 
-Follow these last two steps to cleanup your AWS account and learn how you can continue to use Dynatrace.
+When you are ready, just follow these last two steps to clean up the resources that were setup just for this workshop.
 
 {{% children showhidden="false" %}}

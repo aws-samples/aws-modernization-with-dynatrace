@@ -10,7 +10,7 @@ By just installing the OneAgent, we have now gained a detailed topological view 
 
 * **Right Priority** - We now understand the complexity and interdependency of services and components to the rest of the environment architecture
 * **Right-Sizing the environment** - We now understanding which resources are required to move along with their required resource consumption patterns
-* **Best Migration Strategy** - We now understand the the current end-to-end transactions through architecture and can choose the best migration strategy (rehost, refactor, rearchitect, rebuild)
+* **Best Migration Strategy** - We now understand the current end-to-end transactions through architecture and can choose the best migration strategy (rehost, refactor, rearchitect, rebuild)
 
 ## Checklist
 

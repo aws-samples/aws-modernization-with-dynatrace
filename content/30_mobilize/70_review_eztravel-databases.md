@@ -7,24 +7,28 @@ weight = 70
 ![image](/images/florian.png)
 
 {{% notice note %}}
-As you plan your migration, Database are a critical plan for. Knowing the type of access, executed statements, and amount of data transferred during regular hours of operation allows for better migration planning and prioritization of the move groups. In some cases, you may decide to not migrate this database in favor of other services or databases that are less complex to migrate due to fewer dependencies.
+As you plan your migration, Database observability is critical to a successful plan. Knowing the type of access, executed statements, and amount of data transferred during regular hours of operation allows for better migration planning and prioritization of the move groups. In some cases, you may decide to not migrate this database in favor of other services or databases that are less complex to migrate due to fewer dependencies.
 {{% /notice %}}
 
-To learn some out of the box features of Dyntrace, lets do a quick review the two databases that exist for easyTravel.
-
-## Review SQL Database
-
-Click on the `Databases` link in the Dynatraces left side menu to view the databases that OneAgent was able to automatically discover and instrument.
-
-As mentioned early, easyTravel uses an [Apache Derby embedded relational database](https://en.wikipedia.org/wiki/Apache_Derby), but we also setup a easyTravel VM that is running MongoDB in a docker container. So you should see both listed in the database view.
-
-![image](/images/database.png)
+To learn some out of the box features of Dynatrace, Let’s do a quick review the two databases that exist for easyTravel.
 
 ## Review MongoDB
 
-Click on the `Mongo` database to open the database page. On this page you can explore the database process metrics like writes, reads, and drill into database statements.
+Click on the **Mongo** database to open the database page. 
 
 ![image](/images/database.png)
+
+On this page you can explore the database process metrics like writes, reads, and drill into database statements.
+
+![image](/images/database-mongo.png)
+
+## Review SQL Database
+
+Click on the **Databases** link in the Dynatrace's left side menu to view the databases that OneAgent was able to automatically discover and instrument.
+
+As mentioned early, easyTravel uses an [Apache Derby embedded relational database](https://en.wikipedia.org/wiki/Apache_Derby), but we also setup a easyTravel EC2 Instance that is running MongoDB in a docker container. So you should see both listed in the database view.
+
+![image](/images/database-derby.png)
 
 ## How this helps
 

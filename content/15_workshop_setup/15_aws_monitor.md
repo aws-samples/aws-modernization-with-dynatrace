@@ -103,7 +103,7 @@ The AWS monitoring policy defines the minimum scope of permissions you need to g
 
 #### Step 2 of 3: Create an AWS monitoring role and attach monitoring policy
 
-To give Dynatrace SaaS the role-based monitoring access to your AWS account, you need to create a dedicated monitoring role for Dynatrace in your AWS account. Dynatrace will use this role to authenticate in your AWS environment with the scope of permissions as defined by the monitoring policy. 
+To give Dynatrace SaaS the role-based monitoring access to your AWS account, you need to create a dedicated monitoring role for Dynatrace in your AWS account. Dynatrace will use this role to authenticate in your AWS environment with the scope of permissions as defined by the monitoring policy.
 
 1 . Go to Identity and Access Management (IAM) in your Amazon Console.
 
@@ -121,7 +121,7 @@ The AWS Account ID for Dynatrace SaaS (e.g. https://YOUR_TENANT.live.dynatrace.c
 
 To get the Account and External ID for the AWS role, in your browser, open a new tab and sign in to Dynatrace.
 
-1 . Once logged in, goto **Settings > Cloud and virtualization**
+1 . Once logged in, go to **Settings > Cloud and virtualization**
 
 2 . Choose **AWS** menu then click **Connect new instance** button
 
@@ -176,7 +176,7 @@ Now that we have the AWS role, it's time to connect Dynatrace to your Amazon AWS
 
 2 . In the Role field, use the name of the role you created easier: `dynatrace_monitoring_role`
 
-3 . Type your Account ID (the account you want us to pull metrics from). To get your Account ID, goto your Cloud9 IDE and type in this command and copy the **Account** value from the JSON output as shown here.
+3 . Type your Account ID (the account you want us to pull metrics from). To get your Account ID, go to your Cloud9 IDE and type in this command and copy the **Account** value from the JSON output as shown here.
 
 ```
 aws sts get-caller-identity
@@ -200,7 +200,7 @@ On the far left Dynatrace menu, navigate to the "AWS" menu.
 
 ![image](/images/dt-aws-dashboard-menu.png)
 
-You may see "no data" initially as seen here.  This is because Dynatrace makes Amazon API requests every 5 minutes, so it might take a few minutes for data to show up for the first time.
+You may see “no data” initially as seen here. This is because Dynatrace makes Amazon API requests every 5 minutes, so it might take a few minutes for data to show untill we are done with application setup on AWS.
 
 ![image](/images/dt-aws-dashboard-blank.png)
 
@@ -212,4 +212,4 @@ Once data is coming in, the dashboard pages will look similar to what is shown b
 
 ## Continue with the remaining setup
 
-We will come back to this Dynatrace AWS monitor page later to review data, but let us now move to the next section to complete the setup.
+We will come back to this Dynatrace AWS monitor page, so for now let’s move to the next section to complete the setup.

@@ -19,7 +19,8 @@ You are responsible for the cost of the AWS services used while running this wor
 {{% /notice %}}
 
 {{% notice warning %}}
-Please ensure you have the right permissions and authority within your organization to you are using an account owned by your organization. A new AWS trial account should have 'AdministratorAccess' policy, so this is all you need.  If not, then you need permission to add/delete: VPCs/subnets/Routes/IGWs/Route tables, CloudFormation Stacks, EC2s/security groups/keypairs.  
+You are responsible for the cost of the AWS services used while running this workshop in your AWS account.
+Please ensure you have the right permissions and authority within your organization to you are using an account owned by your organization. A new AWS trial account should have ‘AdministratorAccess’ policy, so this is all you need. If not, then you need permission to add/delete: VPCs/subnets/Routes/IGWs/Route tables, CloudFormation Stacks, and EC2s/security groups/keypairs. 
 {{% /notice %}}
 
 **If this is your option, then [proceed to the workshop setup section](/15_workshop_setup.html)**

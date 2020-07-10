@@ -5,11 +5,11 @@ weight = 10
 +++
 
 
-Meet Jess, easyTravels Technical lead, who will help you setup Dynatrace, AWS, and the easyTravel application. 
+Meet Jess, easyTravels Technical lead, who will help your setup Dynatrace, AWS, and the easyTravel application.
 
 ![image](/images/jess.png)
 
-You will need all of these in place before you can be presented with the various scenarios the easyTravel team is relying on you to solve in this workshop.  
+You will need all of these in place before you can be presented with the various scenarios the easyTravel team is relying on you to solve in this workshop.
 
 ## Objectives of this section
 

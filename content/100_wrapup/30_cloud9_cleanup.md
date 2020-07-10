@@ -7,7 +7,7 @@ weight = 30
 The last resource to clean up is the Cloud9 Environment.
 
 {{% notice warning %}}
-Once you delete the Cloud9 environment is deleted, the inputs with the Dyntrace tokens you entered early will be gone too.  So you will need to repeat the workshop again if you want to reprovision the workshop using using a new Cloud9 instance.
+Once you delete the Cloud9 environment is deleted, the inputs with the Dynatrace tokens you entered early will be gone too.  So you will need to repeat the workshop again if you want to reprovision the workshop using  a new Cloud9 instance.
 {{% /notice %}}
 
 ### Delete Cloud9 Environment
