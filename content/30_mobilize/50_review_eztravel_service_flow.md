@@ -6,7 +6,7 @@ weight: 50
 
 ![image](/images/florian.png)
 
-We just saw one way to review process and service communication, but lets look at how Dynatrace understands your applications’ transactions from end to end. and visualizes through **Service Backtraces** and **Service flows**.
+We just saw one way to review process and service communication, but Let’s look at how Dynatrace understands your applications’ transactions from end to end. and visualizes through **Service Backtraces** and **Service flows**.
 
 * With **Service backtrace**, you see the calls **TO** a service.,
 
@@ -28,7 +28,7 @@ You should be on the service backtrace page where you will see information for t
 
 Dynatrace understands your applications transactions from end to end. This transactional insight is visualized several ways like the backtrace. The backtrace tree view represents the sequence of services that led to this service call, beginning with the page load or user action in the browser.
 
-Follow the picture above to locate the the services that were called in what order that called the **BookingService**
+Follow the picture above to locate the services that were called in what order that called the **BookingService**
 
 1 . The starting point is the **BookingService**
 
@@ -38,7 +38,7 @@ Follow the picture above to locate the the services that were called in what ord
 
 ## Service Flow
 
-Now lets see another visulization called the service flow. TO navigate to this view, refer to these steps and the picture below:
+Now Let’s see another visualization called the service flow. TO navigate to this view, refer to these steps and the picture below:
 
 1 . Click the `...` in the row for the **Customer Frontend**
 
@@ -76,15 +76,15 @@ Refer to the numbers in the picture above:
 
 3 . Click on the boxes to expand the metrics to see the number of requests and average response times going to the BookingService
 
-4 . We can see that on 50% of the calls to `BookingService` goto the `easyTravelBusiness` database. But, it does this 4x per request.
+4 . We can see that on 50% of the calls to `BookingService` go to the `easyTravelBusiness` database. But, it does this 4x per request.
 
 5 . Every call to BookingService make a call to the `CreditCardValidation` service
 
 ## View SQL details
 
-Within easyTravel, the easyTravelBusiness database is actually an [Apache Derby embedded relational database](https://en.wikipedia.org/wiki/Apache_Derby). And the OneAgent lets is automatically see all the SQL statement details. To see them, refer to these steps in the picture below:
+Within easyTravel, the easyTravelBusiness database is actually an [Apache Derby embedded relational database](https://en.wikipedia.org/wiki/Apache_Derby). And the OneAgent Let’s is automatically see all the SQL statement details. To see them, refer to these steps in the picture below:
 
-1 . Click on on the easyTravelBusiness database
+1 . Click on the easyTravelBusiness database
 
 2 . Expand the `easyTravelBusiness` tile
 

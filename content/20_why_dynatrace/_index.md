@@ -12,19 +12,19 @@ Hi, Pravin here again. Now that you are up and going with easyTravel, let me tak
 
 At Mythical Mysfits, we have embraced the proven guidance and resources found at the [AWS Cloud Migration portal](https://aws.amazon.com/cloud-migration/). This portal provides us with the best practices, documentation, and tools that cloud architects, IT professionals, and business decision makers need to successfully achieve short-term and long-term objectives. 
 
-The AWS migration framework presented on the AWS Cloud Migration portal frames this guidence into the [phases](https://aws.amazon.com/cloud-migration/how-to-migrate/) shown below.
+The AWS migration framework presented on the AWS Cloud Migration portal frames this guidance into the [phases](https://aws.amazon.com/cloud-migration/how-to-migrate/) shown below.
 
 <i class='fa fa-check-square'></i>
  **Assess phase** - Before we move, we need to ensure our return on investment by understanding current cost and savings. In addition, we need to validate our organization’s readiness to move to cloud from 6 different perspectives of Cloud Adoption framework- Governance, people, business, platform, security and operations.
 
 <i class='fa fa-check-square'></i> 
-**Mobilize phase** - We need to perform a detailed application and instructure discovery and put a plan in place. We need to identify and put in place the right tools to help iron out the challenges of portfolio analysis, right sizing, application prioritization and application grouping.
+**Mobilize phase** - We need to perform a detailed application and infrastructure discovery and put a plan in place. We need to identify and put in place the right tools to help iron out the challenges of portfolio analysis, right sizing, application prioritization and application grouping.
 
 <i class='fa fa-check-square'></i>
 **Migrate & modernize phases** - It is critical that we accelerate our move to the cloud and application transformations to achieve the benefits, but we must also validate our architecture decisions and our performance and scalability benchmarks.
 
 <i class='fa fa-check-square'></i>
-**Operate & optimize phase** - Once migrated, it will start to get interesting with usage of all modern services, modern architectures using fargate, ECS, EKS, Lambda, Amazaon Aurora Serverless and much more.  We know we need to adopt modern ways of operations by automating monitoring tasks, remediation tasks and ITSM tasks.  We must also continue to expand and optimize our costs and performance.
+**Operate & optimize phase** - Once migrated, it will start to get interesting with usage of all modern services, modern architectures using Fargate, ECS, EKS, Lambda, Amazon Aurora Serverless and much more.  We know we need to adopt modern ways of operations by automating monitoring tasks, remediation tasks and ITSM tasks.  We must also continue to expand and optimize our costs and performance.
 
 ![image](/images/cloud-framework-blank.png)
 
@@ -86,7 +86,7 @@ Dynatrace provides immediate feedback on decisions & transformation. By monitori
 
 ![dt-how-works](/images/dt-flow.png)
 
-This automatically built view along with other views such as the Smartscape view allows for “virtual” monolith to microservice migration planning without code changes. This enables us to make smarter re-architecture and re-platforming decisions based on the existing on-premise workload and to validate other non-functional requirements such as scale, failover, costs.
+This automatically built view along with other views such as the Smartscape view allows for "virtual" monolith to microservice migration planning without code changes. This enables us to make smarter re-architecture and re-platforming decisions based on the existing on-premise workload and to validate other non-functional requirements such as scale, failover, costs.
 
 ![dt-how-works](/images/dt-scale.png)
 
@@ -122,7 +122,7 @@ Dynatrace’s purpose-built AI engine, Davis, sits at the core of Dynatrace and 
 
 &nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i> Identification of bad deployments. Davis knows exactly what deployment or config change has introduced the anomaly in the first place.
 
-&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i> Discovery of unknown unknowns. Davis does not rely on predefined anomaly thresholds but automatically detects any unusual “change points” in the data.
+&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i> Discovery of unknown unknowns. Davis does not rely on predefined anomaly thresholds but automatically detects any unusual "change points" in the data.
 
 &nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i> Automatic hypothesis testing by systematically working through the complete fault tree.
 
@@ -130,19 +130,19 @@ Dynatrace’s purpose-built AI engine, Davis, sits at the core of Dynatrace and 
 
 You gain advanced observability across cloud and hybrid environments, from microservices to mainframe. Automatic full-stack instrumentation, dependency mapping and AI-assisted answers detailing the precise root-cause of anomalies, eliminating redundant manual work, and letting you focus on what matters, delivering instant answers across the full stack.
 
-As a results, you gain advanced observability across cloud and hybrid environments, from microservices to mainframe. Automatic full-stack instrumentation, dependency mapping and AI-assisted answers detailing the precise root-cause of anomalies, eliminating redundant manual work, and letting you focus on what matters, delivering instant answers across the full stack.
+As a result, you gain advanced observability across cloud and hybrid environments, from microservices to mainframe. Automatic full-stack instrumentation, dependency mapping and AI-assisted answers detailing the precise root-cause of anomalies, eliminating redundant manual work, and letting you focus on what matters, delivering instant answers across the full stack.
 
 ![dt-problem](/images/dt-problem-view.png)
 
 ## Enabling modern operations
 
-In order to do more with less and scale, Operations team must transcend IT silos, foster collaboration and improve productivity. Automation is key component of this but it takes platforms that can integrate into the the enterprise eco-system and delivery pipelines. Using the Dynatrace data, AI enabled problems, events, Smartscap and APIs use cases such these a achievebale today:
+In order to do more with less and scale, Operations team must transcend IT silos, foster collaboration and improve productivity. Automation is key component of this, but it takes platforms that can integrate into the enterprise eco-system and delivery pipelines. Using the Dynatrace data, AI enabled problems, events, Smartscape and APIs use cases such these are achievable today:
 
 * Eliminate the QA analysis bottleneck and deliver better software faster
 * Solve problems faster with AI-driven closed loop ITSM integration
 * Automate Problem Remediation
 
-The Dynatrace Software Intellence Platform established a smart cloud ecosystem that enables modern operations that can:
+The Dynatrace Software Intelligence Platform established a smart cloud ecosystem that enables modern operations that can:
 
 * Ingest more data to fill blind spots
 * Pull in data from Cloud Platforms
@@ -152,7 +152,7 @@ The Dynatrace Software Intellence Platform established a smart cloud ecosystem t
 
 ![dt-problem](/images/dt-intregration.png)
 
-## Lets Start!
+## Let’s Start!
 
 The workshop environment with the easyTravel application using your AWS account and Dynatrace instance should now be ready, so proceed now to the [Mobilize](/30_mobilize.html) section to get started.
 

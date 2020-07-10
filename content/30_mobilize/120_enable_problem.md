@@ -6,7 +6,7 @@ weight = 120
 
 ![image](/images/emma.png)
 
-I am Emma from the Cloud Operations team, we are going to jump ahead to trigger a problem that we will review shortly.
+I am Emma from the Cloud Operations team and togther we are going to trigger a problem that we will review shortly.
 
 Various problem patterns that Dynatrace can detect are built into the easyTravel codebase so that we can easily simulate problems without redeploying the application.
 
@@ -14,10 +14,10 @@ These problems will take a few minutes to appear, so we are going to turn one of
 
 ### Turning on a problem pattern
 
-The easyTravel has REST API that an be used to enable or disable a problem pattern.  To make this easier, scripts are provided that will find the IP address for your **YOUR_LAST_NAME-workshop-ez** instance and make the required HTTP REST call for the feature flag.
+The easyTravel has REST API that can be used to enable or disable a problem pattern.  To make this easier, scripts are provided that will find the IP address for your **YOUR_LAST_NAME-workshop-ez** instance and make the required HTTP REST call for the feature flag.
 
 {{% notice info %}}
-Best to run each problem pattern seperately so that it is easier to analyze. It will take about 4-5 minutes for the problem pattern to manifest.
+Best to run each problem pattern separately so that it is easier to analyze. It will take about 4-5 minutes for the problem pattern to manifest.
 {{% /notice %}}
 
 ### Problem Pattern #1: CreditCardCheckError500

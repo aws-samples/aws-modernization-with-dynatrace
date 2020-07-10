@@ -12,7 +12,7 @@ For these steps, you need to be back in the AWS Cloud9 IDE.
 
 ### 1. Clone the workshop scripts
 
-First we need to get some scripts that will automate the workshop setup.
+First, we need to get some scripts that will automate the workshop setup.
 
 ```
 cd ~

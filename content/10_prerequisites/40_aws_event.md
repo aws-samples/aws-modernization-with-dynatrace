@@ -6,7 +6,9 @@ weight: 40
 
 ![image](/images/jess.png)
 
-This workshop creates an new AWS account. You will need the **Participant Hash** provided upon entry and your email address.
+To complete this workshop, you are provided with an AWS account via the AWS Event Engine service. A 12-digit hash will be provided to you by event staff - this is your unique access code. eg:
+
+## `e8476543c00e`
 
 ### Create AWS Account
 
@@ -23,7 +25,7 @@ This account will expire at the end of the workshop and the all the resources cr
 
 * us-west-2 (US West - Oregon)
 
-Please select `US West (Oregon)` in the top right corner.
+Please select **US West (Oregon)** in the top right corner.
 
 ![Event Engine Region](/images/event-engine-region.png)
 

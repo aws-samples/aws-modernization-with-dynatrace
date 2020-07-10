@@ -20,7 +20,7 @@ But one big challenge Florian faces is that the previous architect is no longer 
 
 **Not having enough details about the current environment is hindering easyTravels ability to make the right decisions when planning what to migrate and when.**
 
-To address this problem, you and Florian are going to install Dynatraces OneAgent to automatically discover the easyTravel application, services, processes, and build a complete dependency mapping for the entire application environment. So let’s begin!
+To address this problem, you and Florian are going to install Dynatrace’s OneAgent to automatically discover the easyTravel application, services, processes, and build a complete dependency mapping for the entire application environment. So, let’s begin!
 
 ## Objectives of this section
 

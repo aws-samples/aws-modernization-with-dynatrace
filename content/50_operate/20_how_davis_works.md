@@ -16,7 +16,7 @@ Problems in Dynatrace represent anomalies, i.e. deviations from a normal behavio
 
 Context-rich data collection and baselining are the two fundamental pillars that anomaly detection is built on. A huge amount of high-quality and accurate data is necessary to determine baselines that can effectively be used to distinguish between normal and anomalous situations.
 
-Dynatrace uses a sophisticated AI causation engine, called Davis, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace “problems” are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).
+Dynatrace uses a sophisticated AI causation engine, called Davis, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace "problems" are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).
 
 **3. Causation versus correlation**
 

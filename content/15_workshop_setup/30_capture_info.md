@@ -7,18 +7,18 @@ weight = 30
 ![image](/images/jess.png)
 
 {{% notice warning %}}
-The next set of steps assume that your Dynatrace tenant is fully provisioned and you are logged in. 
+The next set of steps assume that your Dynatrace tenant is fully provisioned and you are logged in.
 {{% /notice  %}}
 
 ### Login into Dynatrace
 
 {{% notice info %}}
-You can always login to your tenant using the URL **https://[ENVIRONMENT ID].live.dynatrace.com** or by using the the SaaS login link on the top right of the Dynatrace home page.
+You can always login to your tenant using the URL **https://[ENVIRONMENT ID].live.dynatrace.com** or by using the SaaS login link on the top right of the Dynatrace home page.
 {{% /notice %}}
 
 ### Collect inputs to workshop setup
 
-You will next gather information needed to configure and deploy easyTravel application. Specifically we will need the following info from your Dynatrace environment:
+You will next gather information needed to configure and deploy easyTravel application. Specifically, we will need the following info from your Dynatrace environment:
 
 * Base URL
 * Environment ID
@@ -27,7 +27,7 @@ You will next gather information needed to configure and deploy easyTravel appli
 
 For this, have provided a simple UNIX shell script for this workshop that prompts for these values and writes them to a file called **creds.json**. Later in the workshop steps, there are a few other simple UNIX shell that will automate the step that read this file so that you don’t need to type or copy-paste these values over and over again during the workshop.
 
-### Lets Begin
+### Let’s Begin
 
 From the Cloud9 window, run these commands to run this script that will provide a set of prompts for you to enter values. If you mess up, you can re-run the script.
 
@@ -37,7 +37,8 @@ cd ~/modernize-workshop-setup/aws
 ```
 
 #### Input 1 of 5: Your last name
-In the UNIX terminal, enter your last name at the prompt. This will be added as a prefix for the AWS resource group name.
+
+In the Cloud9 terminal, enter your last name at the prompt. This will be added as a prefix for the AWS resource group name.
 
 #### Input 2 of 5: Dynatrace Base URL
 
@@ -47,7 +48,7 @@ In the UNIX terminal, enter your last name at the prompt. This will be added as 
 Only include the base URL up to the **...dynatrace.com**
 {{% /notice %}}
 
-2 . Back in the UNIX terminal, paste the value for the `Dynatrace Base URL` prompt.
+2 . Back in the Cloud9 terminal, paste the value for the `Dynatrace Base URL` prompt.
 
 #### Input 3 of 5: Dynatrace Environment ID
 
@@ -59,7 +60,7 @@ Only include the base URL up to the **...dynatrace.com**
 
 ![image](/images/dt-paas-environment.png)
 
-3 . Back in the UNIX terminal, paste the value for the `Dynatrace Environment ID` prompt
+3 . Back in the Cloud9 terminal, paste the value for the `Dynatrace Environment ID` prompt
 
 #### Input 4 of 5: Dynatrace PaaS Token
 
@@ -75,7 +76,7 @@ Only include the base URL up to the **...dynatrace.com**
 
 ![image](/images/dt-paas-token-copy.png)
 
-4 . Back in the UNIX terminal, paste the value for the `Dynatrace PaaS token` prompt
+4 . Back in the Cloud9 terminal, paste the value for the `Dynatrace PaaS token` prompt
 
 #### Input 5 of 5: Dynatrace API Token
 
@@ -95,7 +96,7 @@ Only include the base URL up to the **...dynatrace.com**
 
 ![image](/images/dt-api-token-copy.png)
 
-6 . Back in the UNIX terminal, paste the value for the `Dynatrace PaaS token` prompt
+6 . Back in the Cloud9 terminal, paste the value for the `Dynatrace PaaS token` prompt
 
 
 ### Verify
