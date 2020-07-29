@@ -13,7 +13,7 @@ For this workshop you will use a 15-day free Dynatrace evaluation of the full fe
 1. From there, it will take a few minutes to provision your full-featured and dedicated SaaS Dynatrace environment, which we sometimes refer to as your **"tenant"**.
 
 <p style="text-align:center;">
-{{% button href="https://www.dynatrace.com/trial/" %}}Start free trial{{% /button %}}
+{{% button href="https://www.dynatrace.com/trial/?utm_medium=alliance&utm_source=aws&utm_campaign=website&utm_content=none&utm_term=none" %}}Start free trial{{% /button %}}
 
 <hr>
 <p style="text-align:center;">
