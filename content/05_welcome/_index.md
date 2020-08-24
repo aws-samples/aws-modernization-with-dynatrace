@@ -90,7 +90,7 @@ We are asking ourselves:
 * How can we filter noisy incidents from the actual incident which require attention?
 * How can we scale the team to support additional complexity without adding more staff?
 
-DC Worldwide CIO Agenda 2020 Predictions state that through 2022, deployment of artificial intelligence to augment, streamline, and accelerate IT operations will be a principal IT transformation initiative for 60% of enterprise IT organizations.
+[DC Worldwide CIO Agenda 2020 Predictions](https://www.idc.com/getdoc.jsp?containerId=prUS45616519) state that through 2022, deployment of artificial intelligence to augment, streamline, and accelerate IT operations will be a principal IT transformation initiative for 60% of enterprise IT organizations.
 
 Currently, the platform and tools we use do not have, and are far away from having, artificial intelligence built-in to help us.
 Unless we change, we will continue to spend much time looking for root cause because different teams from Ops and Apps and even Biz must get involved to review multiple tools, dashboards and logs and that translates to a lot of time and resources wasted on troubleshooting. The lack of end-to-end visibility, cross team collaboration in tooling and not having a single pane of glass to view the big picture in the exact timespan causes our teams to waste time troubleshooting. We need to solve these issues as part of our modernization of our application process.
