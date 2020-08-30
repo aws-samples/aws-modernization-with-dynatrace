@@ -1,10 +1,12 @@
 +++
 title = "AWS Monitor"
 chapter = false
-weight = 15
+weight = 10
 +++
 
 ![image](/images/jess.png)
+
+In addition to monitoring your AWS workloads using OneAgent, Dynatrace provides integration with AWS Monitor which adds Infrastructure monitoring to gain insight even into serverless application scenarios.
 
 You can integrate Dynatrace with Amazon Web Services (AWS) for intelligent monitoring of services running in the Amazon Cloud. AWS integration helps you stay on top of the dynamic changes of your virtualized infrastructure.
 
@@ -19,7 +21,7 @@ There are several ways one can configure the Dynatrace AWS monitor, but for this
 1. Configure the AWS Dashboard
 
 {{% notice info %}}
-You can read more about the various ways in the [Dynatrace documents](https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/aws-monitoring-with-dynatrace-saas/#role-based-access)
+You can read more about the various ways in the [Dynatrace documention](https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/aws-monitoring-with-dynatrace-saas/#role-based-access)
 {{% /notice %}}
 
 #### Step 1 of 3: Create AWS monitoring policy
@@ -194,7 +196,7 @@ If successful, your should see the configuration now on the AWS connections page
 
 ![image](/images/dt-aws-dashboard-list.png)
 
-## Review the AWS monitor data
+## Review the AWS monitor page
 
 On the far left Dynatrace menu, navigate to the "AWS" menu.
 
@@ -210,6 +212,20 @@ Once data is coming in, the dashboard pages will look similar to what is shown b
 
 ![image](/images/dt-aws-dashboard.png)
 
-## Continue with the remaining setup
+## Review your metrics
 
-We will come back to this Dynatrace AWS monitor page, so for now let’s move to the next section to complete the setup.
+Once data starts to be collected, click in the blue availability zone section located under the grey header labeled EC2 and you should see the list of availability zones below.  Click on **us-west-2c** and the EC2 instances will be listed. You should  find the Cloud9 instance which does NOT have a Dynatrace OneAgent running on it. Notice too how you automatically get regional and instance type data.
+
+![image](/images/aws-monitor-list.png)
+
+Click on the **Cloud9** instance, and you will see how this host still is represented in the same **Host** view that we saw earlier with the host running the OneAgent. The basic CPU and memory metrics from CloudWatch are graphed for you.  What is GREAT, is that this host is being monitored automatically by the Dynatrace AI engine and can raise a problem when there are anomalies.
+
+![image](/images/aws-monitor-host.png)
+
+## How this helps
+
+The AWS monitor is a central way to get a picture and metrics for the AWS resources running against your accounts as you migrate. 
+
+Read more about how to scale your enterprise cloud environment with enhanced AI-powered observability of all AWS services in [this blog](https://www.dynatrace.com/news/blog/monitor-any-aws-service/).
+
+Also, be sure to check out [This github repository](https://github.com/Dynatrace/snippets/tree/master/product/dashboarding/aws-supporting-services) that contains custom dashboards for AWS Supporting Services.
