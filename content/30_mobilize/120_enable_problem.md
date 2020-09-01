@@ -48,3 +48,28 @@ cd ~/modernize-workshop-setup/aws
 The problem pattern will be turned on when the script is called. Turn off the problem pattern by just re-running the command and adding false as a parameter. For example: `./setProblemPattern-CPULoadJourneyService.sh false`
 {{% /notice %}}
 
+## Review what problems are enabled
+
+This script will can also be used to review what problems are enabled.  Just run this to verify that the **CreditCardCheckError500** or **CPULoadJourneyService** is in the list. There will be other patterns in the list, but you can ignore them.
+
+```
+cd ~/modernize-workshop-setup/aws
+./getProblemPatterns.sh
+```
+
+Sample output with **CreditCardCheckError500** enabled
+
+```
+--------------------------------------------------------------------------------------
+Enabled Patterns on jahn-dynatrace-modernize-workshop-ez-monolith (34.209.63.151)
+--------------------------------------------------------------------------------------
+
+CreditCardCheckError500
+DatabaseCleanup
+DummyNativeApplication.NET
+DummyPaymentService
+SocketNativeApplication
+ThirdPartyAdvertisements
+ThirdPartyContent
+UseFinanceServiceWCF.NET
+```
