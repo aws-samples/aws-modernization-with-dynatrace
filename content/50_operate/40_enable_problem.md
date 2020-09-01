@@ -40,6 +40,8 @@ Once the problem appears, checkout:
 * Root cause
 * Visual resolution path
 
+![image](/images/CreditCardCheckError500.png)
+
 3 . Disable the problem
 
 The problem pattern will be turned on when the script is called. Turn off the problem pattern by just re-running the command and adding false as a parameter. For example: 
@@ -72,6 +74,9 @@ Once the problem appears, checkout:
 * Impacted services
 * Root cause
 * Visual resolution path
+
+![image](/images/CPULoadJourneyService.png)
+
 
 3 . Disable the problem
 
