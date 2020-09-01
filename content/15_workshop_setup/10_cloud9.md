@@ -26,7 +26,7 @@ weight: 10
 
 ![image](/images/c9-name.png)
 
-5 . Keep the default settings and create the environment
+5 . To avoid an error of **t2.micro** not being available in all availability zones of **us-west-2**, choose the **t3-small** option.  Keep the remaining default settings and create the environment
 
 ![image](/images/c9-settings.png)
 
