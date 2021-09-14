@@ -1,0 +1,1 @@
+/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-workshop-base/content/70_lab_5/30_custom_alerting.md
