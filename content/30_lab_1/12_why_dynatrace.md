@@ -4,6 +4,23 @@ chapter: false
 weight: 12
 ---
 
+Cloud modernization is a challenging problem and it can be extremely costly for your business if you don’t prepare properly for it. As you modernize and move apps to the AWS cloud, there are three generally acknowledged areas to focus on around the decision and execution process:
+
+**Plan better**
+
+* Evaluate that the app is well suited for cloud with essential early insights
+* Assess that the new design and cloud architecture will work well and be effective
+
+**Execute faster**
+
+* Avoid problems that impact service delivery and cause delays by identifying issues quickly, in full context
+* Resolve problems faster, reducing overall project risk
+
+**Optimize operations**
+
+* Feel confident that expectation is met for service delivery through clarity on performance before and after migration to the cloud
+* Identify areas for automation
+
 Lets dig deeper into the ways <a href="https://www.dynatrace.com" target="_blank">Dynatrace</a> helps in each phase of our modernization journey.
 
 ![image](/images/cloud-framework-new.png)
@@ -20,15 +37,9 @@ With Dynatrace OneAgent and Smartscape technologies, it is now fast and easy to 
 
 🔷 How can I make sense of all the Spaghetti codes in the legacy app?
 
-Data collection is completely automated and requires no manual effort to setup in particular with the Dynatrace OneAgent that makes it super easy to capture high fidelity data across your full stack of technology.
-
-Automatic visibility, problem detection and smart alerting across end-user traffic, services, infrastructure, network, logs and containers. 
-
 ![dt-how-works](/images/dt-agent.png)
 
-Dynatrace automatically detects and collects a rich set of context metadata to create a real-time topology map called Smartscape. It captures the relationships and dependencies for all system components, both vertically up and down the stack and horizontally between services, processes, and hosts. Within large enterprise systems, there are billions of ever-changing dependencies, and Smartscape keeps track of them all.
-
-The topology map enables Dynatrace to understand the actual connection between all captured metrics, traces, logs, and user experience data. Other than mere time-based correlation topology mapping reveals the actual causal dependencies between captured data. This is the basis for Dynatrace’s radically different AI engine, Davis.
+The Dynatrace Smartscape topology map enables you to understand the actual connection between all captured metrics, traces, logs, and user experience data. Other than mere time-based correlation, topology mapping reveals the actual causal dependencies between captured data. This is the basis for Dynatrace’s radically different AI engine, Davis.
 
 ![dt-capabilities](/images/dt-smartscape-words.png)
 
@@ -125,3 +136,5 @@ The Dynatrace Software Intelligence Platform established a smart cloud ecosystem
 * Exchange data with your business systems
 
 ![dt-problem](/images/dt-intregration.png)
+
+In summary, Dynatrace delivers extremely high-fidelity answers to each of these key areas through its automatic and intelligent observability for discovery and instrumentation, topology dependency mapping, full stack context, and actionable answers to problems.  You can modernize and ensure every app is available, functional, fast, and fully optimized across all channels.
