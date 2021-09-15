@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/60_lab_4/10_slos.md
+10_slos.md

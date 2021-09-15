@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/50_lab_3/04_enable_order_problem.md
+04_enable_order_problem.md

@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/70_lab_5/20_lab_setup.md
+20_lab_setup.md

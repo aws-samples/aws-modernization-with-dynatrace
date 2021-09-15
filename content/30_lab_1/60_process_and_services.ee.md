@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/30_lab_1/60_process_and_services.md
+60_process_and_services.md

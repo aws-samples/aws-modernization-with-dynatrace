@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/99_cleanup/_index.md
+_index.md

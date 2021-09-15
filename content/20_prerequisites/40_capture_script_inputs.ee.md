@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/20_prerequisites/40_capture_script_inputs.md
+40_capture_script_inputs.md

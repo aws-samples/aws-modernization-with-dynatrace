@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/50_lab_3/02_dynatrace_events.md
+02_dynatrace_events.md

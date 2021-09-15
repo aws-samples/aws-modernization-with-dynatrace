@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/20_prerequisites/30_setup_scripts.md
+30_setup_scripts.md

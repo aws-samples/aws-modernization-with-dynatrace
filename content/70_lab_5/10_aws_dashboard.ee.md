@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/70_lab_5/10_aws_dashboard.md
+10_aws_dashboard.md

@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/40_lab_2/20_install_dynatrace_operator.md
+20_install_dynatrace_operator.md
