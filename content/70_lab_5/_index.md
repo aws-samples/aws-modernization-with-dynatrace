@@ -8,6 +8,7 @@ For intelligent monitoring of services running in Amazon cloud, you can integrat
 
 ## Objectives of this Lab
 
-🔷 Review how Dynatrace integrates with [AWS CloudWatch](https://aws.amazon.com/cloudwatch/)
+🔷 Review how Dynatrace integrates with <a href="https://aws.amazon.com/cloudwatch/" target="_blank">AWS CloudWatch</a>
 
-🔷 Review how [AWS CloudWatch](https://aws.amazon.com/cloudwatch/) metrics can be configured as [Metric events for alerts](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/metric-events-for-alerting/)
+🔷 Review how <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/metric-events-for-alerting/" target="_blank">Metric events for alerts</a>
+

@@ -4,7 +4,7 @@ chapter: false
 weight: 02
 ---
 
-Before we get to the problems, let's review [Dynatrace information events](https://www.dynatrace.com/support/help/dynatrace-api/environment-api/events/post-event/).
+Before we get to the problems, let's review Refer to <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/events/post-event/" target="_blank">Dynatrace information events</a>.
 
 Dynatrace information events enable continuous delivery tools to provide additional details for Dynatrace. Here is an example of two informational events for deployment and performance testing being be sent to Dynatrace.
 
@@ -21,7 +21,7 @@ Below we can see both the `CUSTOM_INFO` (#1) and `CUSTOM_DEPLOYMENT` events (#2)
 
 ![image](/images/lab3-problemcard-events.png)
 
-Each event has a timestamp, event source, a few standardized fields (depending on the event type), and the option to add additional custom fields.  See [this table](https://www.dynatrace.com/support/help/shortlink/api-events-post-event#parameters-mapping) for details.  Here are two example events.  NOTE the URL back to the pipeline making the change.
+Each event has a timestamp, event source, a few standardized fields (depending on the event type), and the option to add additional custom fields.  See <a href="https://www.dynatrace.com/support/help/shortlink/api-events-post-event#parameters-mapping" target="_blank">this table</a> for details.  Here are two example events.  NOTE the URL back to the pipeline making the change.
 
 ![image](/images/lab3-event-examples.png)
 

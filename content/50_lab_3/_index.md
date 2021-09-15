@@ -12,5 +12,5 @@ In this lab, we will trigger a few problem and see how troubleshooting time is s
 
 ## Objectives of this Lab
 
-🔷 Enable a problem in the application and walk through what [Dynatrace Davis](https://www.dynatrace.com/platform/artificial-intelligence/) found
+🔷 Enable a problem in the application and walk through what <a href="https://www.dynatrace.com/platform/artificial-intelligence/" target="_blank">Dynatrace Davis</a> found
 

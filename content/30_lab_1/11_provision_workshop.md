@@ -54,24 +54,24 @@ The script will run fast, but it will take about 1-2 minutes for the CloudFormat
 * At EC2 startup, it installs the OneAgent for your Dynatrace tenant
 * Starts up the sample application
 
-3 . Dynatrace configuration
+3 . Dynatrace configuration 
 
-* Set global [Frequent Issue Detection](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/detection-of-frequent-issues/) settings to Off
-* Adjust the [Service Anomaly Detection](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/how-to-adjust-the-sensitivity-of-problem-detection/) global settings to a fixed error threshold
-* Add [Management Zones](https://www.dynatrace.com/support/help/how-to-use-dynatrace/management-zones/) for the monolith and micro services versions of the application
-* Add [Auto Tagging Rules](https://www.dynatrace.com/support/help/how-to-use-dynatrace/tags-and-metadata/) to drive management zone and SLO settings
-* Add [SLOs](https://www.dynatrace.com/support/help/how-to-use-dynatrace/service-level-objectives/) for a use in custom dashboards
+* Set global <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/detection-of-frequent-issues/" target="_blank">Frequent Issue Detection</a> settings to Off
+* Adjust the <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/how-to-adjust-the-sensitivity-of-problem-detection/" target="_blank">Service Anomaly Detection</a>
+* Add <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/management-zones/" target="_blank">Management Zones</a> for the monolith and micro services versions of the application
+* Add <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/tags-and-metadata/" target="_blank">Auto Tagging Rules</a> to drive management zone and SLO settings
+* Add <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/service-level-objectives/" target="_blank">SLOs</a> for a use in custom dashboards
 
 ### 💥 **TECHNICAL NOTE**
 
-_The Dynatrace configuration scripts use a combination of [Dynatrace Monitoring as Code](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code) framework (a.k.a. monaco) and the [Dynatrace Configuration API](https://www.dynatrace.com/support/help/dynatrace-api/configuration-api/) for those few Dynatrace configurations not yet supported by monaco._
+_The Dynatrace configuration scripts use a combination of <a href="https://github.com/dynatrace-oss/dynatrace-monitoring-as-code" target="_blank">Dynatrace Monitoring as Code</a> framework (a.k.a. monaco) and the <a href="https://www.dynatrace.com/support/help/dynatrace-api/configuration-api/" target="_blank">Dynatrace Configuration API</a> for those few Dynatrace configurations not yet supported by monaco._
 
 ## Review CloudFormation Output
 
 As mentioned above, it may take a few minutes, but you can check the CloudFormation output to ensure that all the AWS resources were provisioned successfully. 
 
 Monitor CloudFormation stack status within the AWS console. Navigate to the `CloudFormation` page or just navidate to:
-* [https://console.aws.amazon.com/cloudformation/home](https://console.aws.amazon.com/cloudformation/home)
+* <a href="https://console.aws.amazon.com/cloudformation/home" target="_blank">https://console.aws.amazon.com/cloudformation/home</a>
 
 When it is complete, it will show a `CREATE_COMPLETE` status as shown below, but with your unique stack name.
 

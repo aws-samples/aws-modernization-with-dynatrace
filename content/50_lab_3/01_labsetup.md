@@ -20,4 +20,4 @@ In the next section, you will run a unix script that sets these problems.
 
 ## 💥 **TECHNICAL NOTE**
 
-Refer to [dt-orders overview README](https://github.com/dt-orders/overview) for more details of the various versions.
+Refer to <a href="https://github.com/dt-orders/overview" target="_blank">dt-orders overview README</a>

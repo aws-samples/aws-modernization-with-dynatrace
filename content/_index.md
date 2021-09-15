@@ -8,7 +8,7 @@ weight: 1
 
 Welcome to the Self-Paced Hands-on Lab with Dynatrace that is part of the AWS Marketplace DevOps Workshop Series. This means that you provide an AWS account where there is IAM user/identity that has proper permissions to set up the necessary AWS components to work through the workshop.
 
-If you attending an AWS hosted workshop, then please adjust your view to the `Event Engine` using the dropdown list on the at the bottom on the left side menu. 
+If you are attending an AWS hosted workshop, then please adjust your view to the `Event Engine` using the dropdown list on the at the bottom on the left side menu. 
 
 ### Overview 
 

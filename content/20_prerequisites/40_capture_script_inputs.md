@@ -32,7 +32,7 @@ cd ~/aws-modernization-dt-orders-setup/provision-scripts
 2 . Login into Dynatrace. 
 
 ### 💥 **TECHNICAL NOTE**
-_The URL will be in the Dynatrace tenant creation email such as: https://[ENVIRONMENT ID].live.dynatrace.com.  You can also get there by by using the the SaaS login link on the top right of the [Dynatrace home page](https://www.dyntrace.com)._
+_The URL will be in the Dynatrace tenant creation email such as: https://[ENVIRONMENT ID].live.dynatrace.com.  You can also get there by by using the the SaaS login link on the top right of the <a href="https://www.dyntrace.com" target="_blank">Dynatrace home page</a>._
 
 ## Input 1 of 4: Your last name
 In the UNIX terminal, enter your last name at the prompt. 

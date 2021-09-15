@@ -31,7 +31,7 @@ Starting: Fri 07 May 2021 04:35:46 AM UTC
 ...
 ```
 
-You can monitor the CloudFormation stack delete process in the [AWS console](https://console.aws.amazon.com/cloudformation/home)
+You can monitor the CloudFormation stack delete process in the <a href="https://console.aws.amazon.com/cloudformation/home" target="_blank">AWS console</a>
 
 Eventually when it completes - plan for 5-10 minutes - it will look like this:
 
@@ -48,7 +48,7 @@ If you created a Kubernetes cluster, then must delete the clusters you have spun
 
 ### 💥 **TECHNICAL NOTE**
 
-*If you adjusted the name of the cluster, then you need to adjust the argument value for `--name dynatrace-workshop-cluster`.  To verify the name, review it within the [AWS console](hhttps://console.aws.amazon.com/cloudformation/home)*
+*If you adjusted the name of the cluster, then you need to adjust the argument value for `--name dynatrace-workshop-cluster`.  To verify the name, review it within the <a href="https://console.aws.amazon.com/cloudformation/home" target="_blank">AWS console</a>*
 
 ```
 eksctl delete cluster --name dynatrace-workshop-cluster --region us-west-2 
@@ -56,7 +56,7 @@ eksctl delete cluster --name dynatrace-workshop-cluster --region us-west-2
 
 Plan for 20-30 minutes for this to complete.
 
-You can monitor the CloudFormation stack delete process in the [AWS console](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks)
+You can monitor the CloudFormation stack delete process in the <a href="https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks" target="_blank">AWS console</a>
 
 ## AWS Monitor Policy
 
@@ -75,7 +75,7 @@ You have a fully feature enabled 15 day Dynatrace trial, so keep using it to mon
 
 Here are resources to get your started:
 
-* [Learn more about your tenant and install more OneAgents](https://www.dynatrace.com/support/help/get-started/get-started-with-dynatrace-saas/)
-* [Add other users to your tenant](https://www.dynatrace.com/support/help/how-to-use-dynatrace/user-management-and-sso/manage-groups-and-permissions/)
-* [YouTube Videos](https://www.youtube.com/channel/UCcYJ-5q_AfmjQ4XTjTS0o3g)
-* [More Support resources](https://www.dynatrace.com/services-support/#support-resources-section)
+* <a href="https://www.dynatrace.com/support/help/get-started/get-started-with-dynatrace-saas/" target="_blank">Learn more about your tenant and install more OneAgents</a>
+* <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/user-management-and-sso/manage-groups-and-permissions/" target="_blank">Add other users to your tenant</a>
+* <a href="https://www.youtube.com/channel/UCcYJ-5q_AfmjQ4XTjTS0o3g" target="_blank">YouTube Videos</a>
+* <a href="https://www.dynatrace.com/services-support/#support-resources-section" target="_blank">More Support resources</a>

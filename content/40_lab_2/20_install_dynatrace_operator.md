@@ -6,9 +6,9 @@ weight: 20
 
 One key Dynatrace advantage is ease of activation. OneAgent technology simplifies deployment across large enterprises and relieves engineers of the burden of instrumenting their applications by hand. As Kubernetes adoption continues to grow, it becomes more important than ever to simplify the activation of observability across workloads without sacrificing the deployment automation that Kubernetes provides. Observability should be as cloud-native as Kubernetes itself.
 
-In our workshop, we will install the Dynatrace Operator that streamlines lifecycle management.  You can read more about it here in this [Dynatrace blog](https://www.dynatrace.com/news/blog/new-dynatrace-operator-elevates-cloud-native-observability-for-kubernetes/)
+In our workshop, we will install the Dynatrace Operator that streamlines lifecycle management.  You can read more about it here in this <a href="https://www.dynatrace.com/news/blog/new-dynatrace-operator-elevates-cloud-native-observability-for-kubernetes/" target="_blank">Dynatrace blog</a>.
 
-Organizations will often customize the Dynatrace Operator installation and you can read more about the options in the [Dynatrace docs](https://www.dynatrace.com/support/help/technology-support/container-platforms/kubernetes/monitor-kubernetes-environments/) but, we are going to use a single command that we can get from the Dynatrace interface to show how easy it is to get started.
+Organizations will often customize the Dynatrace Operator installation and you can read more about the options in the <a href="https://www.dynatrace.com/support/help/technology-support/container-platforms/kubernetes/monitor-kubernetes-environments/" target="_blank">Dynatrace docs</a> but, we are going to use a single command that we can get from the Dynatrace interface to show how easy it is to get started.
 
 ## Install Dynatrace Operator
 
@@ -59,6 +59,10 @@ dynatrace-operator-f946fb4c6-q5k5g   1/1     Running   0          3m59s
 
 We will review more detail shortly, but quickly verify within Dynatrace that the hosts are now monitored.
 
-From the left-side menu in Dynatrace choose `Hosts` and you should see the two hosts like the ones shown below in addition to the host with the name `dt-orders-monolith`.
+From the left-side menu in Dynatrace choose `Hosts`. Ensure the `management zone` filter is set to all `ALL`
+
+![image](/images/mz-pick-all.png)
+
+You should see the two hosts like the ones shown below in addition to the host with the name `dt-orders-monolith`.
 
 ![image](/images/lab2-eks-hosts.png)

@@ -4,7 +4,7 @@ chapter: false
 weight: 20
 ---
 
-The sample application is called Dynatrace Orders.  A more detailed overview can be found [here](https://github.com/dt-orders/overview).  All the source code can be found [here](https://github.com/dt-orders).
+The sample application is called Dynatrace Orders.  A more detailed overview can be found <a href="https://github.com/dt-orders/overview" target="_blank">here</a>.  All the source code can be found <a href="https://github.com/dt-orders" target="_blank">here</a>.
 
 ## Get the Public IP to the frontend of the Sample Application.
 

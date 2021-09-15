@@ -60,7 +60,7 @@ cd ~/aws-modernization-dt-orders-setup/learner-scripts/
 ./show-app-urls.sh
 ```
 
-From the output you should see a command like `ssh -i "~/aws-modernization-dt-orders-setup/gen/dynatrace-modernize-workshop.pem" ubuntu@11.22.33.44`
+From the output you should see a command like `ssh -i "~/aws-modernization-dt-orders-setup/gen/<YOUR-LASTNAME>-dynatrace-modernize-workshop.pem" ubuntu@11.22.33.44`
 
 Copy and paste that command to SSH to the monolith VM.  You should see output like this and b e presented another command prompt.
 
@@ -164,6 +164,6 @@ Simply type `exit` to exit the VM and return the CloudShell.
 
 ### 💥 **TECHNICAL NOTE** 
 
-* See the [Dynatrace Docs](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/metric-events-for-alerting/) for more details on the setup.
+* See the <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/metric-events-for-alerting/" target="_blank">Dynatrace Docs</a> for more details on the setup.
 
-* Alert configuration is available through the [Anomaly detection—metric events API](https://www.dynatrace.com/support/help/dynatrace-api/configuration-api/anomaly-detection-api/anomaly-detection-api-metric-events/). Using the API, you can list, update, create, and delete configurations.
+* Alert configuration is available through the <a href="https://www.dynatrace.com/support/help/dynatrace-api/configuration-api/anomaly-detection-api/anomaly-detection-api-metric-events/" target="_blank">Anomaly detection—metric events API</a>. Using the API, you can list, update, create, and delete configurations.

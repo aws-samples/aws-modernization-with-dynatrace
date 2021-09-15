@@ -48,5 +48,5 @@ As AWS services are enabled, Dynatrace will enable preset dashboards automatical
 ![image](/images/lab3-preset-dashboard.png)
 
 To see more dashboards, navigate to this repository:
-* [https://github.com/Dynatrace/snippets/tree/master/product/dashboarding/aws-supporting-services](https://github.com/Dynatrace/snippets/tree/master/product/dashboarding/aws-supporting-services)  
+* <a href="https://github.com/Dynatrace/snippets/tree/master/product/dashboarding/aws-supporting-services" target="_blank">https://github.com/Dynatrace/snippets/tree/master/product/dashboarding/aws-supporting-services</a>
 

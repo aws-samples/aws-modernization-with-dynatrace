@@ -4,7 +4,7 @@ chapter: false
 weight: 12
 ---
 
-Lets dig deeper into the ways [Dynatrace](https://www.dynatrace.com) helps in each phase of our modernization journey.
+Lets dig deeper into the ways <a href="https://www.dynatrace.com" target="_blank">Dynatrace</a> helps in each phase of our modernization journey.
 
 ![image](/images/cloud-framework-new.png)
 

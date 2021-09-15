@@ -29,7 +29,7 @@ Because we use multiple monitoring and logging tools, gathering and compiling al
 
 ## Challenge #3: Making decision for the application migration strategy 
 
-Mythical Mysfits is familar with ["the 6-Rs" migration strategies](https://docs.aws.amazon.com/whitepapers/latest/aws-migration-whitepaper/the-6-rs-6-application-migration-strategies.html) shown in the diagram below, but we are challenged with best determining which one makes sense for us.…
+You may familiar with <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-migration-whitepaper/the-6-rs-6-application-migration-strategies.html" target="_blank">the 6-Rs migration strategies</a> shown in the diagram below, but we are challenged with best determining which one makes sense for us.…
 
 ![image](/images/cloud-migration-strategies-new.png)
 

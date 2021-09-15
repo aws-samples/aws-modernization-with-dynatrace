@@ -19,7 +19,7 @@ NOTE: The step `Create Cluster` will take ~30 minutes to complete while the EKS 
 ## Install the pre-requisite tools
 
 1 . Start by installing `eksctl`, a simple command line utility for creating and managing Kubernetes clusters on Amazon Elastic Kubernetes Service (EKS). You can find out more by checking out the documentation.
-* [https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
+* <a href="https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html" target="_blank">https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html</a>
 
 First, make a new folder in your home directory
 
@@ -40,8 +40,7 @@ eksctl version
 ```
 
 2 . Next, install `kubectl`. Kubernetes uses this command line utility for communicating with the cluster API server. You can find out more by checking out the documentation
- * [https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html] (https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
-
+ * <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html" target="_blank">https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html</a>
  ```
  curl --silent -o $HOME/bin/kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/kubectl 
  ```

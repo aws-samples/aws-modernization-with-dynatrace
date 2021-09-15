@@ -20,7 +20,7 @@ Referring to this picture, follow these steps:
 
 1. On the settings page, click the `dashboard JSON` menu.
 1. Copy and paste the following Json content from this file into your dashboard JSON, replacing the existing JSON in the process:
-    * https://raw.githubusercontent.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/main/learner-scripts/cloud-modernization-dashboard.json
+    * <a href="https://raw.githubusercontent.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/main/learner-scripts/cloud-modernization-dashboard.json" target="_blank">https://raw.githubusercontent.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/main/learner-scripts/cloud-modernization-dashboard.json</a>
 1. You **MUST** replace the `owner` field to be the email that you logged into Dynatrace with or you will not be able to view it. 
 
 ![image](/images/lab2-dashboard-json.png)

@@ -10,7 +10,7 @@ Only proceed with this next step once the CloudFormation stack shows `CREATE_COM
 
 ## 1. Verify Cluster using kubectl
 
-Using the CloudShell, you can verify the new cluster with the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command line tool used to control Kubernetes clusters. 
+Using the CloudShell, you can verify the new cluster with the <a href="https://kubernetes.io/docs/reference/kubectl/overview/" target="_blank">kubectl</a> command line tool used to control Kubernetes clusters. 
 
 1. Run this command to display the command line options
 
@@ -53,7 +53,8 @@ Using the CloudShell, you can verify the new cluster with the [kubectl](https://
 ## 2. Verify Cluster within AWS Console
 
 With the AWS Console, search for the `Elastic Kubernetes Service` or click on the link below.
-* [https://us-west-2.console.aws.amazon.com/eks/home?region=us-west-2#/clusters](https://us-west-2.console.aws.amazon.com/eks/home?region=us-west-2#/clusters)
+
+* <a href="https://us-west-2.console.aws.amazon.com/eks/home?region=us-west-2#/clusters" target="_blank">https://us-west-2.console.aws.amazon.com/eks/home?region=us-west-2#/clusters</a>
 
 ![image](/images/setup-eks-cluster.png)
 

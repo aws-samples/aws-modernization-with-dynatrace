@@ -125,5 +125,5 @@ To review this setting, on the left side menu, click `settings`, click `Anomaly 
 
 ![image](/images/lab3-global-anomoly-rules.png)
 
-Learn more about how How problems are detected and analyzed in the [Dynatrace Docs](https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/automated-multi-dimensional-baselining/)
+Learn more about how How problems are detected and analyzed in the <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/problem-detection-and-analysis/problem-detection/automated-multi-dimensional-baselining/" target="_blank">Dynatrace Docs</a>
 

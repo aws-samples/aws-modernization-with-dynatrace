@@ -1,5 +1,5 @@
 ---
-title: "Technologies"
+title: "Technologies and processes"
 chapter: false
 weight: 92
 ---
@@ -18,15 +18,11 @@ The workshop is somewhat limited, so here is an example from another environment
 
 This is another out-of-the-box feature that helps you understand what technologies are in your environment with a heat map presentation to what degree they exist.
 
-## Review Technologies View
+## Review Technologies and processes View
 
-1. Click on the **Technologies** link on the left side menu within Dynatrace to view the technologies that OneAgent was able to automatically discover and instrument.
+1. Click on the **Technologies and processes** link on the left side menu within Dynatrace to view the technologies that OneAgent was able to automatically discover and instrument.
 
     ![image](/images/lab1-technology.png)
-
-1. Make sure you management zone filter is set to `All` so that you see everything
-
-    ![image](/images/lab1-mz-filter-off.png)
 
 1. In the filter box, type `tag`, choose `stage`, and the value of `dev`. It should look like this:
 
@@ -34,4 +30,4 @@ This is another out-of-the-box feature that helps you understand what technologi
 
 ## Planning Ahead
 
-You can always click into the `Dynatrace Hub` menu within Dynatrace to learn about the many technologies that Dynatrace supports.  This list is in sync and constantly updated in conjunction with the [Dynatrace website technologies pages](https://www.dynatrace.com/technologies)
+You can always click into the `Hub` menu within Dynatrace to learn about the many technologies that Dynatrace supports.  This list is in sync and constantly updated in conjunction with the <a href="https://www.dynatrace.com/hub" target="_blank">Dynatrace website hub page</a>

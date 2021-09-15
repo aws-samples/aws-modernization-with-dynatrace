@@ -14,7 +14,7 @@ Using the service flow and service backtrace, these two tools give you a complet
 
 ## Review Service backtrace
 
-Let’s now take a look at the transactions and Services by clicking on the `Transactions and services` left side Dynatrace menu.
+Let’s now take a look at the Services by clicking on the `Services` left side Dynatrace menu.
 
 Pick the `backend` service.
 

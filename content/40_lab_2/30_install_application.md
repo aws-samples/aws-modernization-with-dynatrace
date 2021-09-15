@@ -7,7 +7,8 @@ weight: 30
 Dynatrace automatically derives tags from your Kubernetes/OpenShift labels. This enables you to automatically organize and filter all your monitored Kubernetes/OpenShift application components.
 
 To review what is configured for the sample application, go ahead and open this folder and look at one such as the `frontend.yml`:
-* [https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests](https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests) 
+
+* <a href="https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests" target="_blank">https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests</a>
 
 Notice the labels and annotations:
 
@@ -25,7 +26,7 @@ metadata:
         chat-channel: dev-team-frontend 
 ```
 
-Notice the defined container and version.  These containers are stored in [Dockerhub](https://hub.docker.com/u/dtdemos).
+Notice the defined container and version.  These containers are stored in <a href="https://hub.docker.com/u/dtdemos" target="_blank">Dockerhub</a>.
 
 ```
 spec:
@@ -44,9 +45,10 @@ env:
 
 ### 💥 **TECHNICAL NOTES** 
 
-* The `DT_CUSTOM_PROPS` is a special Dynatrace feature, that the OneAgent will automatically recognize and make Dynatrace tags for the process. You can read more details in the [Dynatrace documentation](https://www.dynatrace.com/support/help/shortlink/process-group-properties#anchor_variables)
+* The `DT_CUSTOM_PROPS` is a special Dynatrace feature, that the OneAgent will automatically recognize and make Dynatrace tags for the process. You can read more details in the <a href="https://www.dynatrace.com/support/help/shortlink/process-group-properties#anchor_variables" target="_blank">Dynatrace documentation</a>
 
-* Read more details on how Dynatrace identifies labels and tags Kubernetes in the [Dynatrace documentation](https://www.dynatrace.com/support/help/technology-support/container-platforms/kubernetes/other-deployments-and-configurations/leverage-tags-defined-in-kubernetes-deployments/)
+
+* Read more details on how Dynatrace identifies labels and tags Kubernetes in the <a href="https://www.dynatrace.com/support/help/technology-support/container-platforms/kubernetes/other-deployments-and-configurations/leverage-tags-defined-in-kubernetes-deployments" target="_blank">Dynatrace documentation</a>
 
 ## Run the script to deploy the sample application
 
@@ -59,7 +61,7 @@ cd ~/aws-modernization-dt-orders-setup/app-scripts
 
 ### 💥 **TECHNICAL NOTE**
 
-The [start-k8.sh](https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts) script automates a number of `kubectl` commands:
+The <a href="https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts" target="_blank">start-k8.sh</a> script automates a number of `kubectl` commands:
 
 1. Create a namespace called `staging` where all these resources will reside
 1. Grant the Kubernetes default service account a viewer role into the `staging` namespace
@@ -94,5 +96,5 @@ In Kubernetes, every pod is associated with a service account which is used to a
 * In order for Dynatrace to read the Kubernetes properties and annotations, you need to grant the Kubernetes default service account a viewer role into the `staging` namespace to enable this. We only have one namespace, but you will need to repeat these steps for all service accounts and namespaces you want to enable for Dynatrace within your environments.
 
 For the workshop, we already updated the required file with the `staging` namespace. Next you will run the setup script that will apply it to your cluster. Go ahead and open this folder and look at the `dynatrace-oneagent-metadata-viewer.yaml` file. 
-* [https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests](https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests)
+* <a href="https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests" target="_blank">https://github.com/dt-alliances-workshops/aws-modernization-dt-orders-setup/tree/main/app-scripts/manifests</a>
 

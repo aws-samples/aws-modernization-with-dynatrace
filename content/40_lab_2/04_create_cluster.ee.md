@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-workshop-base/content/40_lab_2/04_create_cluster.md
+/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/40_lab_2/04_create_cluster.md

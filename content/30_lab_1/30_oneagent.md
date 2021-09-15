@@ -28,7 +28,7 @@ _The URL and Token is unique to your Dynatrace tenant.  If you expand the `Set c
 
 ### 💥 **TECHNICAL NOTE** 
 
-_Setting the hostname via  `/bin/sh Dynatrace-OneAgent-Linux-1.xxx.yyy.sh --set-host-name=my-host-name` is just [one of the ways](https://www.dynatrace.com/support/help/how-to-use-dynatrace/hosts/configuration/set-custom-host-names-in-dynamic-environments/) to customize host naming._
+_Setting the hostname via  `/bin/sh Dynatrace-OneAgent-Linux-1.xxx.yyy.sh --set-host-name=my-host-name` is just <a href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/hosts/configuration/set-custom-host-names-in-dynamic-environments" target="_blank">one of the ways</a> to customize host naming._
 
 1 . These are the commands used to download, verify, and install the OneAgent.  **That is it!**
 
@@ -38,5 +38,5 @@ _Setting the hostname via  `/bin/sh Dynatrace-OneAgent-Linux-1.xxx.yyy.sh --set-
 
 ### 💥 **TECHNICAL NOTE** 
 
-_Learn more about the various ways the OneAgent can be installed, check out the [Dynatrace documentation](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent/)_
+_Learn more about the various ways the OneAgent can be installed, check out the <a href="https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent" target="_blank">Dynatrace documentation</a>_
 

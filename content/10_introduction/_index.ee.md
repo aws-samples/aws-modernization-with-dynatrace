@@ -1,1 +1,1 @@
-/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-workshop-base/content/10_introduction/_index.md
+/Users/rob.jahn/dev/dt-alliances-workshops/aws-modernization-with-dynatrace/content/10_introduction/_index.md

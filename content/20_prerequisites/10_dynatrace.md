@@ -10,7 +10,7 @@ For this workshop you will use a 15-day free Dynatrace evaluation of the full fe
 
 To sign up for a 15-day trial, navigate to this URL:
 
-* [https://www.dynatrace.com/trial](https://www.dynatrace.com/trial/?utm_medium=alliance&utm_source=aws&utm_campaign=website&utm_content=none&utm_term=none)
+* <a href="https://www.dynatrace.com/trial/?utm_medium=alliance&utm_source=aws&utm_campaign=website&utm_content=none&utm_term=none" target="_blank">https://www.dynatrace.com/trial</a>
 * You can use your work email even if you are an existing Dynatrace customer
 * If you have any issues email `alliances-help@dynatrace.com`
 

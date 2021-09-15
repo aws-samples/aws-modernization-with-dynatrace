@@ -16,7 +16,7 @@ The Dynatrace OneAgent has been installed by the workshop provisioning scripts a
 
 **#3 . Load generator process**
 
-A JMeter](https://github.com/dt-orders/load-traffic) process sends simulated user traffic to the sample app running within a Docker container. You will not need to interact with this container, it just runs in the background.
+A <a href="https://github.com/dt-orders/load-traffic" target="_blank">JMeter</a> process sends simulated user traffic to the sample app running within a Docker container. You will not need to interact with this container, it just runs in the background.
 
 ![image](/images/lab1-setup.png)
 

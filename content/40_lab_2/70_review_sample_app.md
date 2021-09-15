@@ -10,11 +10,11 @@ Refer to this picture for a more detailed description of our setup.
 
 **1 - Dynatrace Namespace**
 
-This [Kubernetes Namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) contains the pods and services that make up the Dynatrace Operator.
+This <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/" target="_blank">Kubernetes Namespace</a> contains the pods and services that make up the Dynatrace Operator.
 
 **2 - Kubernetes nodes**
 
-Kubernetes runs your workload by placing containers into Pods to run on [Nodes](https://kubernetes.io/docs/concepts/architecture/nodes/).
+Kubernetes runs your workload by placing containers into Pods to run on <a href="https://kubernetes.io/docs/concepts/architecture/nodes/" target="_blank">Nodes</a>.
 
 **3 - Dynatrace**
 
@@ -22,11 +22,11 @@ Dynatrace tenant where monitoring data is collected and analyzed.
 
 **4 - Cloud shell**
 
-The shell is configured with the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command line tool that lets you control Kubernetes clusters.
+The shell is configured with the <a href="https://kubernetes.io/docs/reference/kubectl/overview/" target="_blank">kubectl</a> command line tool that lets you control Kubernetes clusters.
 
 **5 - Sample application namespace**
 
-This [Kubernetes Namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) contains the sample application pods and services.
+This <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/" target="_blank">Kubernetes Namespace</a> contains the sample application pods and services.
 
 **6 - Sample application**
 

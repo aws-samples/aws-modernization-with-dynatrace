@@ -22,7 +22,8 @@ bash: syntax error near unexpected token `newline'
 
 
 2 . To get you Key Pair name that was automatically created in Lab 1 for the EC2 instance, navigate to the `Key Pairs` page in the AWS console:
-* [https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#KeyPairs](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#KeyPairs). The Key Pair name will be something like `jones-dynatrace-modernize-workshop` as shown below.
+
+* <a href="https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#KeyPairs" target="_blank">https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#KeyPairs</a>. The Key Pair name will be something like `jones-dynatrace-modernize-workshop` as shown below.
 
 ![image](/images/setup-keypairs-ui.png)
 
@@ -70,7 +71,8 @@ You can navigate to the CloudFormation page as shown below.
 ![image](/images/setup-cloudformation-search.png)
 
 Or use this link as shortcut to the CloudFormation page
-* [https://us-west-2.console.aws.amazon.com/cloudformation/home](https://us-west-2.console.aws.amazon.com/cloudformation/home)
+
+* <a href="https://us-west-2.console.aws.amazon.com/cloudformation/home" target="_blank">https://us-west-2.console.aws.amazon.com/cloudformation/home</a>
 
 On the CloudFormation page, click on the stack shown.
 

@@ -12,13 +12,9 @@ Such "server-side services" can take the form of web services, web containers, d
 
 As you plan your migration, it is important to gain a complete picture of interdependency to the rest of the environment architecture at host, processes, services, application perspectives. Since time is always scarce, being able to do this in a single place can shorten assessment timelines.
 
-## Transactions and services
+## Services
 
-Let’s now take a look at all the services being monitored by clicking on the `Transactions and services` left side Dynatrace menu.
-
-In the management zone drop down, choose `dt-orders-monolith`.
- 
-![image](/images/lab1-pick-monolith-mz.png)
+Let’s now take a look at all the services being monitored by clicking on the `Services` left side Dynatrace menu.
 
 The filtered list should now look like this:
 

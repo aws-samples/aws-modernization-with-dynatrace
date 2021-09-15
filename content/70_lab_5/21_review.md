@@ -32,8 +32,8 @@ Click on an EC2 instance, and you will see how this host still is represented in
 
 The AWS monitor is a central way to get a picture and metrics for the AWS resources running against your accounts as you migrate.
 
-Read more about how to scale your enterprise cloud environment with enhanced AI-powered observability of all AWS services in [this Dynatrace blog](https://www.dynatrace.com/news/blog/monitor-any-aws-service/).
+Read more about how to scale your enterprise cloud environment with enhanced AI-powered observability of all AWS services in <a href="https://www.dynatrace.com/news/blog/monitor-any-aws-service/" target="_blank">this Dynatrace blog</a>
 
 ### 💥 **TECHNICAL NOTE** 
 
-See the [Dynatrace Docs](https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/aws-monitoring-with-dynatrace-saas/) for more details on the setup options.
+See the <a href="https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/aws-monitoring-with-dynatrace-saas/" target="_blank">Dynatrace Docs</a> for more details on the setup options.

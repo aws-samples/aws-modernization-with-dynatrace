@@ -4,9 +4,10 @@ chapter: false
 weight: 30
 ---
 
-The [AWS Cloud Migration portal](https://aws.amazon.com/cloud-migration/) provides the best practices, documentation, and tools that cloud architects, IT professionals, and business decision makers need to successfully achieve short-term and long-term objectives. 
+The <a href="https://aws.amazon.com/cloud-migration" target="_blank">AWS Cloud Migration portal</a> provides the best practices, documentation, and tools that cloud architects, IT professionals, and business decision makers need to successfully achieve short-term and long-term objectives. 
 
-The AWS migration framework presented on the AWS Cloud Migration portal frames this guidance into the [phases](https://aws.amazon.com/cloud-migration/how-to-migrate/) shown below.
+The AWS migration framework presented on the AWS Cloud Migration portal frames this guidance into the <a href="https://aws.amazon.com/cloud-migration/how-to-migrate/" target="_blank">phases</a> shown below.
+
 
 * **Assess phase** - Before we move, we need to ensure our return on investment by understanding current cost and savings. In addition, we need to validate our organization’s readiness to move to cloud from 6 different perspectives of Cloud Adoption framework- Governance, people, business, platform, security and operations.
 
@@ -16,7 +17,7 @@ The AWS migration framework presented on the AWS Cloud Migration portal frames t
 
 * **Operate & optimize phase** - Once migrated, it will start to get interesting with usage of all modern services, modern architectures using Fargate, ECS, EKS, Lambda, Amazon Aurora Serverless and much more.  We know we need to adopt modern ways of operations by automating monitoring tasks, remediation tasks and ITSM tasks.  We must also continue to expand and optimize our costs and performance.
 
-Here is an overview for how [Dynatrace](https://www.dynatrace.com) helps in each phase of our modernization journey.
+Here is an overview for how <a href="https://www.dynatrace.com" target="_blank">Dynatrace</a> helps in each phase of our modernization journey.
 
 ![image](/images/cloud-framework-new.png)
 
