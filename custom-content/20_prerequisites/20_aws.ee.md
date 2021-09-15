@@ -22,9 +22,19 @@ If you are currently logged in to an AWS Account, you can log out using this [li
 
 ![Event Engine](/images/event-engine-initial-screen.png)
 
-2 . Once your AWS account provisions, you will be redirected to the AWS portal. 
+2 . Once on the `Team dashboard` page, click the `AWS console` button that opens a popup.  
+
+![Event Engine](/images/aws-event-engine.png)
+
+3 . On the popup, click on `Open AWS console` button which opens the AWS portal.
+
+![Event Engine](/images/aws-event-engine-popup.png)
+
+4 . One the new browser tab, you should see the AWS portal. 
 
 ![image](/images/setup-aws-portal.png)
+
+5 . Once you are in the AWS portal, you can now move to the next section.
 
 {{% notice warning %}}
 Once the free credits for this account expire, all the resources created will be automatically de-provisioned and you will not be able to access the account.
