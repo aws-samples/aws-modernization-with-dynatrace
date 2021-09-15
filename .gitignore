@@ -39,3 +39,8 @@ notes.txt
 *.pptx
 ATEMP/
 public/
+
+# other files
+.DS_Store
+hugo
+publish.sh
