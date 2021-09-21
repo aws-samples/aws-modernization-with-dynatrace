@@ -51,7 +51,7 @@ If you created a Kubernetes cluster, then must delete the clusters you have spun
 *If you adjusted the name of the cluster, then you need to adjust the argument value for `--name dynatrace-workshop-cluster`.  To verify the name, review it within the <a href="https://console.aws.amazon.com/cloudformation/home" target="_blank">AWS console</a>*
 
 ```
-eksctl delete cluster --name dynatrace-workshop-cluster --region us-west-2 
+eksctl delete cluster --name dynatrace-workshop --region us-west-2 
 ```
 
 Plan for 20-30 minutes for this to complete.
