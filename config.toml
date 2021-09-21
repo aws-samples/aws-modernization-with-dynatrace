@@ -1,11 +1,11 @@
 baseURL = "/"
 languageCode = "en-US"
-defaultContentLanguage = "en"
+defaultContentLanguage = "oyo"
 
 title = "Dynatrace Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
+defaultContentLanguageInSubdir= "false"
 uglyurls = "true"
 enableEmoji = true
 
@@ -15,9 +15,9 @@ enableEmoji = true
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "Dynatrace Technical Alliances Team"
+  author = "Alliances@Dynatrace.com"
   # Description of the site, will be used in meta information
-  description = "Accelerate your cloud migration and modernize your workloads with AWS and Dynatrace"
+  description = "Dynatrace Modernization Workshop"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -30,7 +30,7 @@ enableEmoji = true
   # A title for shortcuts in menu is set by default. Set this to true to disable it. 
   disableShortcutsTitle = false
   # When using mulitlingual website, disable the switch language button.
-  disableLanguageSwitchingButton = true
+  disableLanguageSwitchingButton = false
   # Hide breadcrumbs in the header and only show the current page title
   disableBreadcrumb = false
   # Hide Next and Previous page buttons normally displayed full height beside content
@@ -42,30 +42,51 @@ enableEmoji = true
 
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-chalkboard'></i> Dynatrace"
-url = "https://www.dynatrace.com/technologies/aws-monitoring/"
+name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
+url = "https://awsworkshop.io"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> Modernizing with AWS"
+name = "<i class='fas fa-tools'></i> AWS Builders Library"
+url = "https://aws.amazon.com/builders-library/"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='far fa-lightbulb'></i> Modernization with AWS"
 url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
 weight = 20
 
-[[menu.shortcuts]] 
-name = "<i class='fas fa-chalkboard'></i> Modernization Workshops"
-url = "https://awsworkshop.io"
-weight = 30
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> EKS Workshop"
+url = "https://eksworkshop.com/"
+weight = 21
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> Workshop feedback"
-url = "https://github.com/aws-samples/aws-modernization-with-dynatrace"
-weight = 40
+name = "<i class='fas fa-chalkboard-teacher'></i> ECS Workshop"
+url = "https://ecsworkshop.com/"
+weight = 22
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> App Mesh Workshop"
+url = "https://www.appmeshworkshop.com/"
+weight = 23
 
 [markup]
-defaultMarkdownHandler = "blackfriday"
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    hrefTargetBlank = true
 
-[markup.blackFriday]
-hrefTargetBlank = true
+[Languages]
+[Languages.oyo]
+title = "MP DevOps Series"
+weight = 1
+languageName = "MP DevOps Series"
+
+[Languages.ee]
+title = "Event Engine"
+weight = 2
+languageName = "Event Engine"
+
