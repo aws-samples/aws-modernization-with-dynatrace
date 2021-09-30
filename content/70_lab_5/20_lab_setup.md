@@ -143,9 +143,9 @@ To give Dynatrace SaaS the role-based monitoring access to your AWS account, you
 
 ![image](/images/dt-aws-dashboard-role.png)
 
-3 . Paste `509560245411` into the `Account ID` field
+3 . Select the `Another AWS account` tile as to establish trust with the Dynatrace account.
 
-4 . Select the `Another AWS account` tile as to establish trust with the Dynatrace account.
+4 . Paste `509560245411` into the `Account ID` field
 
 5 . Select the `Require external ID` checkbox
 

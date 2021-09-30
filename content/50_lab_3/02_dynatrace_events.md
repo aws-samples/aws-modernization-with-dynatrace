@@ -39,6 +39,8 @@ In a nutshell, tags in Dynatrace are labels or markers used for organizing entit
 
 ## API call Example
 
+Here is an example of a typical events API call. You do not need to executed this as you will see this in action as part of the scripts in the next step
+
 ```
 curl -X POST \
   https://mySampleEnv.live.dynatrace.com/api/v1/events \

@@ -11,14 +11,14 @@ Only proceed with this next step once the CloudFormation stack shows `CREATE_COM
 ## 1. Verify Cluster using kubectl
 
 Using the CloudShell, you can verify the new cluster with the <a href="https://kubernetes.io/docs/reference/kubectl/overview/" target="_blank">kubectl</a> command line tool used to control Kubernetes clusters. 
-
+content/99_cleanup/index.md
 1. Run this command to display the command line options
 
     ```
     kubectl
     ```
 
-1. Verify you are connected. You should see `dynatrace-workshop-cluster` as part of the output.
+1. Verify you are connected. You should see `dynatrace-workshop` as part of the output.
 
     ```
     kubectl config current-context
@@ -27,7 +27,7 @@ Using the CloudShell, you can verify the new cluster with the <a href="https://k
     The output should look like this:
 
     ```
-    [user-info]@dynatrace-workshop-cluster.us-west-2.eksctl.io
+    [user-info]@dynatrace-workshop.us-west-2.eksctl.io
     ```
 
 1. List the nodes in the cluster

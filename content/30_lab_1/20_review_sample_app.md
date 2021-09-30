@@ -21,7 +21,7 @@ To view the application, paste the public IP using `HTTP` NOT `HTTPS` into a bro
 Use the menu on the home page to navigate around the application and notice the URL for key functionality.  You will see these URLs later as we analyze the application.
 
 * Customer List = `customer/list.html`
-* Customer Detail - Each product has a unique page = `customer/5.html`
+* Customer Detail - Each customer has a unique page = `customer/5.html`
 * Catalog List = `catalog/list.html`
 * Catalog Search Form = `catalog/searchForm.html`
 * Order List = `order/list.html`
