@@ -34,9 +34,11 @@ Response Data
 
 From the left side menu, navigate to the `Releases` page.  Here you will see the how Dynatrace detected the versions of monitored processes.  It may take a minute, but you will see the version change in the `Real-time inventory` section and a new event in the `Release events` section.
 
-**NOTE** Be sure to adjust the management zone to `dt-orders-services`
-
 ![image](/images/lab3-release-order.png)
+
+**NOTE: Be sure that your management zone is NOT filtered!**
+
+![image](/images/lab1-mz-filter-off.png)
 
 If you expand the event, you should see something like this
 

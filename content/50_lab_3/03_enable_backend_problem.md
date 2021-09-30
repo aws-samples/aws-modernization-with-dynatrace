@@ -67,7 +67,15 @@ The event has the URL back to the sample application, so just click that if you 
 
 ## 3. Review problem in Dynatrace
 
-The problem may take a minute to show up, but this is what the problem will look like once it does. Also, you may see two problems that eventually get merged into one as Dynatrace is performing the problem analysis.
+The problem may take a minute to show up, but this is what the problem will look like once it does. 
+
+To view Dynatrace problem cards, from the Dynatrace left side menu just navigate to `Problems`.
+
+**NOTE: Be sure that your management zone is NOT filtered!**
+
+![image](/images/lab1-mz-filter-off.png)
+
+You may see two problems that eventually get merged into one as Dynatrace is performing the problem analysis.
 
 1. Impact Summary - Multiple services affected
 1. Root cause

@@ -37,7 +37,7 @@ If you still get an error, first check that you have the correct `--ssh-public-k
 
 *Optionally, you can adjust the argument value for `--name dynatrace-workshop` if you are sharing an AWS account with others as to make it a unique name.*
 
-5 . Review the output will start to look like this and may take 20-30 minutes to fully provision..
+5 . Review the output will start to look like this and may take 20-30 minutes to fully provision.
 
 ```
 cloudshell-user@ip-10-0-45-241 learner-scripts]$ eksctl create cluster --region us-west-2 --with-oidc --ssh-access --version=1.21 --managed --name dynatrace-workshop --tags "Purpose=dynatrace-modernization-workshop" --ssh-public-key jones-dynatrace-modernize-workshop
@@ -65,7 +65,11 @@ When this command is complete you should see:
 2021-09-03 19:53:35 [✔]  EKS cluster "dynatrace-workshop-cluster" in "us-west-2" region is ready
 ```
 
-6 . Also verify the CloudFormation script is also complete within the AWS console.
+### 💥 **TECHNICAL NOTE**
+
+*It is possible that your AWS cloud shell will time out before you see the `EKS cluster is ready` `eksctl` console output. It that occurs, that is OK.  Just refresh your connection to get back to the command prompt and just monitor the CloudFormation script progress from the AWS console as described next.*
+
+6 . Monitor an verify completion status of the CloudFormation script within the AWS console.
 
 You can navigate to the CloudFormation page as shown below.
 ![image](/images/setup-cloudformation-search.png)
