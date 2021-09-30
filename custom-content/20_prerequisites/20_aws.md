@@ -9,6 +9,7 @@ weight: 20
 This workshop requires an AWS account where there is IAM user/identity that has proper permissions to set up the necessary AWS components to work through the workshop. Worried about costs associated with this workshop? Don't worry, there's a page that will allow you to request for AWS credits to pay for any costs incurred through this workshop!
 
 You will need permission to add/delete: VPCs/subnets/Routes/IGWs/Route tables, CloudFormation Stacks, and EC2s/security groups/keypairs.
+
 * If you are using an AWS trial account, you should have `AdministratorAccess` policy, so this is all you need. 
 * If you are using an account owned by your organization, please ensure you have the right permissions and authority. 
 
