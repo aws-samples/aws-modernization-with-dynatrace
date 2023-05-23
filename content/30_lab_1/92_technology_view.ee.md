@@ -1,1 +1,0 @@
-92_technology_view.md
