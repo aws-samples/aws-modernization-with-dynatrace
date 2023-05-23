@@ -1,1 +1,0 @@
-12_why_dynatrace.md

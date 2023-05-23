@@ -1,1 +1,0 @@
-70_review_sample_app.md
