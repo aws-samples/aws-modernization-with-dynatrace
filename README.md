@@ -23,7 +23,7 @@ Please ensure we have all the necessary information to effectively respond to yo
     git submodule update
     ```
 
-* To run locally call `hugo server`
+* To run locally run `hugo server`
 
 # Maintainer
 
