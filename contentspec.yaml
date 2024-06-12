@@ -1,0 +1,52 @@
+# We only support version 2.0.
+version: 2.0
+
+# Default locale code of the content, formatted as languageCode-countryCode.
+defaultLocaleCode: en-US
+
+# A list of all of the supported locale codes, formatted as languageCode-countryCode.
+localeCodes:
+  - en-US
+
+# A dictionary of arbitrary parameters that can be referenced in the workshop guide
+# using the params directive.
+params:
+  author: Patrick Vassell & Shashiraj (Raj) Jeripotula 
+  description: Dynatrace and AWS - Modernization Workshop
+
+# List of links to display in the workshop guide. Will be rendered on the left hand side navigation menu.
+additionalLinks:
+  - title: AWS Cloud Modernization with Dynatrace 
+    link: https://dynatrace.awsworkshop.io/
+
+awsAccountConfig:
+  # A list of valid account sources that are compatible for this content.
+  # Only the following values are accepted:
+  #   - `WorkshopStudio`: Accounts will be provisioned for the event by Workshop Studio.
+  #   - `CustomerProvided`: Customer is responsible for using their own accounts.
+  # Note: An event can be configured to have a mix of values mentioned above.
+  accountSources: 
+    - WorkshopStudio
+  participantRole:
+    iamPolicies: 
+      - static/iam/iam_policy.json
+  
+  
+  regionConfiguration:
+    minAccessibleRegions: 1
+    maxAccessibleRegions: 3
+    accessibleRegions:
+      recommended:
+        - us-west-2
+        - us-east-1
+        - us-east-2
+  
+    deployableRegions:
+      recommended:
+        - us-west-2
+        - us-east-1
+        - us-east-2
+
+  # If set to `true`, an EC2 KeyPair called `ws-default-keypair` will be created in the AWS Account and the private key material
+  # will be made available to the Participant via the Participant APIs and Participant interface.
+  ec2KeyPair: true
