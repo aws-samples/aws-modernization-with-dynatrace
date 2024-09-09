@@ -14,7 +14,7 @@ You can enable this feature for specific Kubernetes clusters. See below for inst
 1. In the Dynatrace menu, go to Kubernetes.
 2. Find your Kubernetes cluster, and then select More (…) > Settings in the Actions column.
 
-![image](/images/aws-lab8-k8-events_boom7.png)
+![image](/images/aws-lab8-K8-events_boom7.png)
 
 3. Make sure that the flags are same as image.  Also click on the "add events field selector" button and add the below text to the "Field selector name" and "field selector expresion"
     ```
@@ -26,7 +26,7 @@ You can enable this feature for specific Kubernetes clusters. See below for inst
     involvedObject.kind=Pod
     ```
     
-![image](/images/aws-lab8-k8-events_boom8.png)
+![image](/images/aws-lab8-K8-events_boom8.png)
 
 4. Select Save Changes
 

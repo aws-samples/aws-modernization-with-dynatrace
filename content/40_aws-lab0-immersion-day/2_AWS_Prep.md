@@ -19,7 +19,7 @@ In this lab, we will be using AWS Cloudshell. Cloudshell is a browser-based shel
 
 To open the Cloudshell, click on the Cloudshell icon at the top of the AWS console.  This make take a minute to complete.
 
-![image](/images/aws-lab0-immersion-day_setup-cloud-shell-icon.png)
+![image](/images/aws-lab0-immersion-day_AWSCLI.png)
 
 This may open up a slash page. 
 

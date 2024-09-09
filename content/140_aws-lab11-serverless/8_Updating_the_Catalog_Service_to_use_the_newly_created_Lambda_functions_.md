@@ -7,7 +7,7 @@ weight: 9
 
 Ensure you are still in the same directory 
 ```
-~/aws-modernization-dt-orders-setup/app-scripts/
+~/aws-modernization-dt-orders-setup/provision-scripts/
 ```
 Lets double check that the `catalog-service-serverless.yml` has all the necessary updates from the LambdaProvisionScript.sh
 

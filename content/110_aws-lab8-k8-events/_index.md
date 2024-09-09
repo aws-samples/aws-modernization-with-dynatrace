@@ -10,5 +10,5 @@ After enabling the Kubernetes event monitoring, you can view and analyze events 
 
 In the Dynatrace Kubernetes dashboard, these events will look like this: 
 
-![image](/images/aws-lab8-k8-events_boom-events.png)
+![image](/images/aws-lab8-K8-events_boom-events.png)
 

@@ -25,7 +25,7 @@ The host running the sample application were all created using scripts that inst
 
 From the left-side menu in Dynatrace choose `Hosts` then click on the host with the name `dt-orders-monolith`.
 
-![image](/images/aws-lab1_lab1-host-view.png)
+![image](/images/aws-lab1_newHost.png)
 
 On host page, you will see basic infrastructure information for the host.
 
