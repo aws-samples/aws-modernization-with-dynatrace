@@ -25,5 +25,5 @@ Organizations will often customize the Dynatrace Operator installation and you c
     1. Click the `Create tokens` button
     1. Select the `Skip SSL Certificate Check` to be ON
     
-    ![image](/images/aws-lab6_lab4-operator-new.png)
+    ![image](/images/aws-lab6_newkubdep.png)
 

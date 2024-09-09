@@ -51,10 +51,7 @@ Create AWS resource: monolith-vm
 {
     "StackId": "arn:aws:cloudformation:us-west-2:838488672964:stack/monolith-vm-1635990306/d82cd2b0-3d10-11ec-a495-023df82ab493"
 }
-Create AWS resource: services-vm
-{
-    "StackId": "arn:aws:cloudformation:us-west-2:838488672964:stack/services-vm-1635990309/d8a6e4b0-3d10-11ec-a495-023df82ab493"
-}
+
 ```
 
 ### 3. Verify CLoudFormation Stacks

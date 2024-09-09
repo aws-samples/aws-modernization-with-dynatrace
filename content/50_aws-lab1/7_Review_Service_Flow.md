@@ -62,7 +62,7 @@ Pick the `backend` service.
 
 On the `backend` service, click on the `Analyze Backtrace` button.
 
-![image](/images/aws-lab1_lab1-service-backtrace-arrow.png)
+![image](/images/aws-lab1_newBacktrace.png)
 
 You should be on the service backtrace page where you will see information for this specific service.
 

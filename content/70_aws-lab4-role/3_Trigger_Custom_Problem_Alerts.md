@@ -97,21 +97,26 @@ For example:
 ```
 #### If output is this...
 
-    ubuntu@ip-10-0-0-118:~$ ps -ef | grep yes
-    ubuntu    5802  5438 99 20:48 pts/0    00:00:05 yes
-    ubuntu    5805  5438 89 20:48 pts/0    00:00:04 yes
-    ubuntu    5806  5438 97 20:48 pts/0    00:00:03 yes
+ubuntu@ip-10-0-0-118:~$ ps -ef | grep yes
+ubuntu    5802  5438 99 20:48 pts/0    00:00:05 yes
+ubuntu    5805  5438 89 20:48 pts/0    00:00:04 yes
+ubuntu    5806  5438 97 20:48 pts/0    00:00:03 yes
 
 #### Then run...
 
-    kill 5802
-    kill 5805
-    kill 5806
+kill 5802
+kill 5805
+kill 5806
 ```
-Or use the below command to kill all the PID's at once
+Or better to use the below command to kill all the PID's at once
 ```
 kill $(ps -ef | grep yes | awk '{print $2}' | sed '$d')
 ```
+Or even more effective is:
+```
+pkill yes
+```
+**Always more than 1 way to skin a cat**
 
 3 . Verify they are gone by running this again `ps -ef | grep yes`
 

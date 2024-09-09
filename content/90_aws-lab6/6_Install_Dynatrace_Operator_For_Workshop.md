@@ -18,12 +18,14 @@ weight: 7
 1. Next, copy the commands from the `Monitor Kubernetes / Openshift`  configuration page of Dynatrace UI or from below to continue with the Kuberentes Operator Install steps.
 
          ```
-         kubectl create namespace dynatrace
-         kubectl apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/v0.14.1/kubernetes.yaml
-         kubectl -n dynatrace wait pod --for=condition=ready --selector=app.kubernetes.io/name=dynatrace-operator,app.kubernetes.io/component=webhook --timeout=300s
-         kubectl apply -f dynakube.yaml
-         ```
+         helm install dynatrace-operator oci://public.ecr.aws/dynatrace/dynatrace-operator \
+         --create-namespace \
+         --namespace dynatrace \
+         --atomic
 
+         kubectl apply -f dynakube.yaml
+
+         ```
     <aside class="negative">
         If you receive any errors running the commands above, please ensure you're in the `/aws-modernization-dt-orders-setup/gen` folder as highlighted in the step above.
     </aside>
