@@ -4,6 +4,7 @@
       {
           "Resource": "*",
           "Action": [
+              "autoscaling:*",
               "cloud9:*",
               "cloudformation:*",
               "cloudtrail:*",
