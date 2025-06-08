@@ -19,7 +19,8 @@
               "s3:*",
               "states:*",
               "tag:*",
-              "cloudshell:*"
+              "cloudshell:*",
+              "ssm:*"
           ],
           "Effect": "Allow",
           "Sid": "OverlyPermissivePolicy"
