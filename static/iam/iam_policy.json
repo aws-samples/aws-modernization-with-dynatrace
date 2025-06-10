@@ -202,6 +202,11 @@
           "Effect": "Allow",
           "Action": "ssm:GetParameter",
           "Resource": "arn:aws:ssm:*:{{.AccountId}}:parameter/*"
+      },
+      {
+          "Effect": "Allow",
+          "Action": "ec2-instance-connect:*",
+          "Resource": "*"
       }
   ]
 }
