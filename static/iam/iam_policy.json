@@ -20,7 +20,9 @@
               "states:*",
               "tag:*",
               "cloudshell:*",
-              "ssm:*"
+              "ssm:*",
+              "firehose:*",
+              "kinesis:*"
           ],
           "Effect": "Allow",
           "Sid": "OverlyPermissivePolicy"
