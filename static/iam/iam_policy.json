@@ -22,7 +22,8 @@
               "cloudshell:*",
               "ssm:*",
               "firehose:*",
-              "kinesis:*"
+              "kinesis:*",
+              "kinesisanalytics:*"
           ],
           "Effect": "Allow",
           "Sid": "OverlyPermissivePolicy"
